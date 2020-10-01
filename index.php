@@ -96,7 +96,7 @@
                                         <ul id="navigation">                                                                                                                                     
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="Catagori.html">Catagori</a></li>
-                                            <li class="hot"><a href="#">Latest</a>
+                                            <li><a href="#">Latest</a>
                                                 <ul class="submenu">
                                                     <li><a href="product_list.html"> Product list</a></li>
                                                     <li><a href="single-product.html"> Product Details</a></li>

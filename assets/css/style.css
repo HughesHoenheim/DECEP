@@ -32,6 +32,10 @@
   background: #ffffff;
 }
 
+.yellow-upra{
+	background: #FBC20E; 
+}
+
 /* line 40, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_color.scss */
 .gray-bg {
   background: #f5f5f5;
@@ -479,7 +483,7 @@ input:focus::-moz-placeholder {
 
 /* line 230, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_common.scss */
 .btn {
-  background: #2577fd;
+  background: #FBC20E;
   -moz-user-select: none;
   text-transform: capitalize;
   color: #fff;
@@ -510,7 +514,7 @@ input:focus::-moz-placeholder {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #00b1ff;
+  background: #F6DB94;
   z-index: 1;
   border-radius: 5px;
   transition: transform 0.5s;
@@ -3518,7 +3522,8 @@ input:focus {
 /* line 84, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
 .header-bottom .main-menu ul li a {
   font-size: 16px;
-  color: #000000;
+/*    color de las letras de los botones del header*/
+  color: #000;
   display: inline-block;
   text-transform: capitalize;
   padding: 39px 18px;
@@ -3547,7 +3552,7 @@ input:focus {
 
 /* line 102, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
 .header-bottom .main-menu ul li:hover > a {
-  color: #ff003c;
+  color: #FBC20E;
 }
 
 /* line 106, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
@@ -3642,7 +3647,8 @@ input:focus {
 
 /* line 172, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
 .header-bottom .header-right .form-box input {
-  border: 1px solid #eeeeee;
+/*  border: 1px solid #eeeeee;*/
+    border: 1px solid #FBC20E;
   border-radius: 30px;
   padding: 10px 20px;
   width: 100%;
@@ -3672,7 +3678,9 @@ input:focus {
   content: "02";
   width: 25px;
   height: 25px;
-  background: #00b1ff;
+/*  background: #00b1ff;*/
+/*    background: #EEEE21;*/
+    background: #FBC20E;
   color: #fff;
   line-height: 25px;
   text-align: center;
@@ -3695,7 +3703,8 @@ input:focus {
   line-height: 50px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #eeeeee;
+/*  border: 1px solid #eeeeee;*/
+    border: 1px solid #FBC20E;
   color: #4e4e4e;
   font-size: 19px;
   cursor: pointer;
@@ -3712,7 +3721,9 @@ input:focus {
   content: "02";
   width: 25px;
   height: 25px;
-  background: #00b1ff;
+/*  background: #00b1ff;*/
+/*    background: #EEEE21;*/
+    background: #FBC20E;
   color: #fff;
   line-height: 25px;
   text-align: center;
@@ -3735,7 +3746,8 @@ input:focus {
   line-height: 50px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #eeeeee;
+/*  border: 1px solid #eeeeee;*/
+    border: 1px solid #FBC20E;
   color: #4e4e4e;
   font-size: 14px;
   cursor: pointer;
@@ -3782,7 +3794,9 @@ input:focus {
 
 /* line 293, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
 .top-bg {
-  background: #000000;
+/*  background: #000000;*/
+/*    background: #EFEE21;*/
+    background: #FBC20E;
 }
 
 /* line 300, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */

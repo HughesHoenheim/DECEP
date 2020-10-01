@@ -5,6 +5,7 @@
 $white: #ffffff;
 $black: #16161a;
 $gray:#f7f7fd;
+$yellowUPRA: #FBC20E; 
 
 // font-color
 $heading-color:#002d5b;
@@ -12,6 +13,7 @@ $heading-color:#002d5b;
 //Theme color
 $theme-color: #ff003c;
 $theme-color2: #222222;
+//$theme-color2: #EFEE21;
 $theme-color3: #f27420;
 $theme-color4: #ff3500;
 
@@ -37,6 +39,11 @@ $heading_color2: #ff8b23;
 .white-bg{
 	background: #ffffff;
 }
+
+.yellow-upra{
+	background: #FBC20E; 
+}
+
 .gray-bg{
 	background: #f5f5f5;
 }
@@ -86,7 +93,7 @@ $blue-bg1:#00163e;
 	background:$white;
 }
 .black-bg {
-	background: $black;
+	background: $yellowUPRA;
 }
 .theme-bg {
 	background:$theme-color;

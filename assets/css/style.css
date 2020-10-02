@@ -4024,7 +4024,8 @@ input:focus {
 
 /* line 74, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_h1-hero.scss */
 .slider-area .hero__caption h1 {
-  color: #1f2022;
+/*  color: #FBC20E;*/
+    color: #fff;
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
   font-size: 100px;

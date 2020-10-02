@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                            <h2>product list</h2>
+                            <h2>Lista de Cursos</h2>
                         </div>
                     </div>
                 </div>
@@ -29,24 +29,24 @@
                     <div class="product_sidebar">
                         <div class="single_sedebar">
                             <form action="#">
-                                <input type="text" name="#" placeholder="Search keyword">
+                                <input type="text" name="#" placeholder="Buscar">
                                 <i class="ti-search"></i>
                             </form>
                         </div>
                         <div class="single_sedebar">
                             <div class="select_option">
-                                <div class="select_option_list">Category <i class="right fas fa-caret-down"></i> </div>
+                                <div class="select_option_list">Categoria <i class="right fas fa-caret-down"></i> </div>
                                 <div class="select_option_dropdown">
-                                    <p><a href="#">Category 1</a></p>
-                                    <p><a href="#">Category 2</a></p>
-                                    <p><a href="#">Category 3</a></p>
-                                    <p><a href="#">Category 4</a></p>
+                                    <p><a href="#">Cursos Cortos</a></p>
+                                    <p><a href="#">Certificaciones Profesionales</a></p>
+                                    <p><a href="#">Certificaciones Ocupacionales</a></p>
+                                    <p><a href="#">Educaci&oacute;n Continua</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="single_sedebar">
                             <div class="select_option">
-                                <div class="select_option_list">Type <i class="right fas fa-caret-down"></i> </div>
+                                <div class="select_option_list">Tipos <i class="right fas fa-caret-down"></i> </div>
                                 <div class="select_option_dropdown">
                                     <p><a href="#">Type 1</a></p>
                                     <p><a href="#">Type 2</a></p>
@@ -62,17 +62,16 @@
                         <div class="row">
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product6.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Cervical pillow for airplane
-                                    car office nap pillow</a> </h3>
-                                    <p>From $5</p>
+                                    <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/compuaplicaciones/excel8.jpg" alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Microsoft Excel B&aacute;sico</a> </h3>
+                                    <p>    $175 | (3) Cr&eacute;ditos </p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product2.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
-                                    <p>From $5</p>
+                                    <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/destrezastecyprof/grooming-prices4.jpg" alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Grooming</a> </h3>
+                                    <p>$175.00 | (3)</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">

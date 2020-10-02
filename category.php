@@ -70,7 +70,7 @@
                                     <div class="product-img">
                                         <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/intro_compu.jpg" alt="">
                                         <div class="new-product">
-<!--                                            <span>New</span>-->
+                                            <!--  <span>New</span>-->
                                         </div>
                                     </div>
                                     <div class="product-caption">
@@ -83,12 +83,12 @@
                                         </div>-->
                                         <h4><a href="#">Computadora y sus Aplicaciones</a></h4>
                                         <div class="price">
-<!--
+                                            <!--
                                             <ul>
                                                 <li>$175.00</li>
                                                 <li> (3) Cr&eacute;ditos</li>
                                             </ul>
--->
+                                            -->
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@
                                         <div class="price">
                                             <ul>
                                                 <li>$175.00</li>
-<!--                                                <li class="discount">$60.00</li>-->
+                                            <!--<li class="discount">$60.00</li>-->
                                             </ul>
                                         </div>
                                     </div>
@@ -121,7 +121,7 @@
                                     <div class="product-img">
                                         <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/jardineria.jpg" alt="">
                                         <div class="new-product">
-<!--                                            <span>New</span>-->
+                                        <!--<span>New</span>-->
                                         </div>
                                     </div>
                                     <div class="product-caption">
@@ -136,7 +136,7 @@
                                         <div class="price">
                                             <ul>
                                                 <li>$175.00</li>
-<!--                                                <li class="discount">$60.00</li>-->
+                                                <!-- <li class="discount">$60.00</li>-->
                                             </ul>
                                         </div>
                                     </div>
@@ -159,7 +159,7 @@
                                         <div class="price">
                                             <ul>
                                                 <li>$1,350.00</li>
-<!--                                                <li class="discount">$60.00</li>-->
+                                            <!--<li class="discount">$60.00</li>-->
                                             </ul>
                                         </div>
                                     </div>
@@ -182,7 +182,7 @@
                                         <div class="price">
                                             <ul>
                                                 <li>$225.00</li>
-<!--                                                <li class="discount">$60.00</li>-->
+                                            <!--<li class="discount">$60.00</li>-->
                                             </ul>
                                         </div>
                                     </div>
@@ -193,7 +193,7 @@
                                     <div class="product-img">
                                         <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/facturacionMED2.jpg" alt="">
                                         <div class="new-product">
-<!--                                            <span>New</span>-->
+                                            <!--<span>New</span>-->
                                         </div>
                                     </div>
                                     <div class="product-caption">
@@ -208,7 +208,7 @@
                                         <div class="price">
                                             <ul>
                                                 <li>$795.00</li>
-<!--                                                <li class="discount">$60.00</li>-->
+                                                <!--<li class="discount">$60.00</li>-->
                                             </ul>
                                         </div>
                                     </div>
@@ -546,7 +546,7 @@
                                     <div class="product-img">
                                         <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certiocupacionales/handyman-services1.jpg" alt="">
                                         <div class="new-product">
-<!--                                            <span>New</span>-->
+<!--                                          <span>New</span>-->
                                         </div>
                                     </div>
                                     <div class="product-caption">
@@ -702,8 +702,10 @@
                                     </div>
                                 </div>
                             </div>  -->
+                        </div>
+                    </div>
                             
-                             <div class="tab-pane fade" id="nav-continua" role="tabpanel" aria-labelledby="nav-continua-tab">
+                    <div class="tab-pane fade" id="nav-continua" role="tabpanel" aria-labelledby="nav-continua-tab">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
@@ -720,17 +722,17 @@
                                         </div>-->
                                         <h4><a href="#">Construcci&oacute;n de Portafolio Electr&oacute;nico</a></h4>
                                         <div class="price">
-<!--
+                                            <!--
                                             <ul>
                                                 <li>$40.00</li>
                                                 <li class="discount">$60.00</li>
                                             </ul>
--->
+                                            -->
                                         </div>
                                     </div>
                                 </div>
                             </div> 
-                           <!-- <div class="col-xl-4 col-lg-4 col-md-6">
+                             <!-- <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
                                         <img src="assets/img/categori/product3.png" alt="">
@@ -756,7 +758,7 @@
                                     </div>
                                 </div>
                             </div> -->
-       <!--                     <div class="col-xl-4 col-lg-4 col-md-6">
+                            <!--<div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
                                         <img src="assets/img/categori/product1.png" alt="">

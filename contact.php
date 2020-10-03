@@ -7,12 +7,12 @@
     <!-- slider Area Start-->
     <div class="slider-area ">
         <!-- Mobile Menu -->
-        <div class="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+        <div class="single-slider slider-height2 d-flex align-items-center" data-background="../DECEP/DECEP_IMG/contactbanner2.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                            <h2>Contact Us</h2>
+<!--                            <h2>Contact Us</h2>-->
                         </div>
                     </div>
                 </div>
@@ -134,6 +134,7 @@
     <!-- ================ contact section end ================= -->
     
     <!-- Gallery Start-->
+<!--
     <div class="gallery-wrapper lf-padding">
         <div class="gallery-area">
             <div class="container-fluid">
@@ -157,6 +158,7 @@
             </div>
         </div>
     </div>
+-->
     <!-- Gallery End-->
     
     

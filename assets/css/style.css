@@ -96,7 +96,7 @@
 */
 /* line 63, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_variables.scss */
 .boxed-btn {
-  background-color: #000;
+  background-color: #fff;
   color: #fff !important;
   display: inline-block;
   padding: 18px 44px;
@@ -104,7 +104,7 @@
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #FBC20E;
+  border: 1px solid #fff;
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
@@ -114,7 +114,7 @@
 /* line 78, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_variables.scss */
 .boxed-btn:hover {
   background: #FBC20E;
-  color: #000 !important;
+  color: #fff !important;
   border: 1px solid #FBC20E;
 }
 

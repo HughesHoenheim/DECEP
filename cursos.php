@@ -68,7 +68,9 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/intro_compu.jpg" alt="">
+                                       
+                                        <a href="product_list.php"> <img  src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/intro_compu.jpg" alt=""></a>
+                                        
                                         <div class="new-product">
                                             <!--  <span>New</span>-->
                                         </div>
@@ -96,7 +98,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                     <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/fotografia-digital.jpg" alt="">
+                                    <a href="product_list.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/fotografia-digital.jpg" alt=""></a>
                                     </div>
                                     <div class="product-caption">
                                         <!--<div class="product-ratting">
@@ -119,7 +121,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/jardineria.jpg" alt="">
+                                        <a href="product_list.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/jardineria.jpg" alt=""></a>
                                         <div class="new-product">
                                         <!--<span>New</span>-->
                                         </div>
@@ -145,7 +147,8 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certiocupacionales/handyman-services1.jpg" alt="">
+                                       
+                                        <a href="product_list.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certiocupacionales/handyman-services1.jpg" alt=""></a>
                                     </div>
                                     <div class="product-caption">
                                         <!--<div class="product-ratting">
@@ -168,7 +171,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/compuaplicaciones/diseno_grafico.png" alt="">
+                                        <a href="product_list.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/compuaplicaciones/diseno_grafico.png" alt=""></a>
                                     </div>
                                     <div class="product-caption">
                                        <!-- <div class="product-ratting">
@@ -191,7 +194,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/facturacionMED2.jpg" alt="">
+                                        <a href="product_list.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/facturacionMED2.jpg" alt=""></a>
                                         <div class="new-product">
                                             <!--<span>New</span>-->
                                         </div>

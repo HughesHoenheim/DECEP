@@ -35,7 +35,7 @@
                         </div>
                         <div class="single_sedebar">
                             <div class="select_option">
-                                <div class="select_option_list">Categoria <i class="right fas fa-caret-down"></i> </div>
+                                <div class="select_option_list">Categor&iacute;a <i class="right fas fa-caret-down"></i> </div>
                                 <div class="select_option_dropdown">
                                     <p><a href="#">Cursos Cortos</a></p>
                                     <p><a href="#">Certificaciones Profesionales</a></p>
@@ -62,28 +62,30 @@
                         <div class="row">
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/compuaplicaciones/excel8.jpg" alt="" class="img-fluid">
+                                   <a href="single-product.php">
+                                    <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/compuaplicaciones/excel8.jpg" alt="" class="img-fluid"></a>
                                     <h3> <a href="single-product.html">Microsoft Excel B&aacute;sico</a> </h3>
                                     <p>    $175 | (3) Cr&eacute;ditos </p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/destrezastecyprof/grooming-prices4.jpg" alt="" class="img-fluid">
+                                   <a href="single-product.php">
+                                       <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/destrezastecyprof/grooming-prices4.jpg" alt="" class="img-fluid"></a>
                                     <h3> <a href="single-product.html">Grooming</a> </h3>
                                     <p>$175.00 | (3) Cr&eacute;ditos</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/fotografia2.jpg" alt="" class="img-fluid">
+                                    <a href="single-product.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/fotografia2.jpg" alt="" class="img-fluid"></a>
                                     <h3> <a href="single-product.html">Fotograf&iacute;a</a> </h3>
                                     <p>$175.00 | (3) Cr&eacute;ditos</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/lenguajedesenas.jpg" alt="" class="img-fluid">
+                                    <a href="single-product.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/lenguajedesenas.jpg" alt="" class="img-fluid"></a>
                                     <h3> <a href="single-product.html">Lenguaje de Senas</a> </h3>
                                     <p>$175.00 | (3) Cr&eacute;ditos</p>
                                 </div>

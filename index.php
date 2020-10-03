@@ -24,10 +24,10 @@
                                 <div class="hero__caption">
 <!--                                    <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>-->
                                     <h1 data-animation="fadeInRight" data-delay=".6s">DECEP <br> UPRA</h1>
-                                    <p data-animation="fadeInRight" data-delay=".8s">Division de Educacion Continua y <br>Estudios Profecionales</p>
+                                    <p data-animation="fadeInRight" data-delay=".8s">Division de Educaci&oacute;n Continua y <br>Estudios Profecionales</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
-                                        <a href="cursos.php" class="btn hero-btn">Shop Now</a>
+                                        <a href="cursos.php" class="btn hero-btn">Ver Cursos</a>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle text-center mb-85">
-                            <h2>Shop by Category</h2>
+                            <h2>Categor&iacute;as</h2>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                                 <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/empresarismo1.jpg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Todas</h2>-->
-                                    <span class="best"><a href="cursos.php">Todas las Categorias</a></span>
+                                    <span class="best"><a href="cursos.php">Todas las Categor&iacute;as</a></span>
 <!--                                    <span class="collection">New Collection</span>-->
                                 </div>
                             </div>
@@ -118,8 +118,9 @@
         <!-- Latest Products Start -->
         <section class="latest-product-area padding-bottom">
             <div class="container">
+<!--
                 <div class="row product-btn d-flex justify-content-end align-items-end">
-                    <!-- Section Tittle -->
+                     Section Tittle 
                     <div class="col-xl-4 col-lg-5 col-md-5">
                         <div class="section-tittle mb-30">
                             <h2>Latest Products</h2>
@@ -127,7 +128,7 @@
                     </div>
                     <div class="col-xl-8 col-lg-7 col-md-7">
                         <div class="properties__button f-right">
-                            <!--Nav Button  -->
+                            Nav Button  
                             <nav>                                                                                                
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">All</a>
@@ -136,15 +137,17 @@
                                     <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">Offer</a>
                                 </div>
                             </nav>
-                            <!--End Nav Button  -->
+                            End Nav Button  
                         </div>
                     </div>
                 </div>
+-->
                 <!-- Nav Card -->
                 <div class="tab-content" id="nav-tabContent">
                     <!-- card one -->
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row">
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -171,6 +174,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -194,6 +199,8 @@
                                     </div>
                                 </div>
                             </div> 
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -220,6 +227,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -243,6 +252,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -266,6 +277,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -292,11 +305,13 @@
                                     </div>
                                 </div>
                             </div>
+-->
                         </div>
                     </div>
                     <!-- Card two -->
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <div class="row">
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -320,6 +335,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -343,6 +360,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -369,6 +388,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -392,6 +413,8 @@
                                     </div>
                                 </div>
                             </div> 
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -418,6 +441,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -444,11 +469,13 @@
                                     </div>
                                 </div>
                             </div>
+-->
                         </div>
                     </div>
                     <!-- Card three -->
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <div class="row">
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -472,6 +499,8 @@
                                     </div>
                                 </div>
                             </div> 
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -498,6 +527,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -524,6 +555,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -547,6 +580,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -573,6 +608,8 @@
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -596,6 +633,7 @@
                                     </div>
                                 </div>
                             </div>
+-->
                         </div>
                     </div>
                     <!-- card foure -->
@@ -770,9 +808,9 @@
                         </div>
                         <div class="col-xl-8 col-lg-8">
                             <div class="best-product-caption">
-                                <h2>Encuentra el curso que deceas<br></h2>
-                                <p>Conviertete en un profecional.</p>
-                                <a href="product_list.php" class="black-btn">Matriculate!</a>
+                                <h2>Encuentra el curso que deseas<br></h2>
+                                <p>Convi&eacute;rtete en un profecional.</p>
+                                <a href="product_list.php" class="black-btn">Matricúlate!</a>
                             </div>
                         </div>
                     </div>

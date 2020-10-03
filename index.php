@@ -761,7 +761,7 @@
                 <div class="container position-relative">
                     <div class="row justify-content-between align-items-end">
                         <div class="product-man position-absolute  d-none d-lg-block">
-                            <img src="../DECEP/DECEP_IMG/estudiante.png" alt="" width="280" height="620">
+                            <img src="../DECEP/DECEP_IMG/estudiante.png" alt="" width="300" height="620">
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-2 d-none d-lg-block">
                             <div class="vertical-text">

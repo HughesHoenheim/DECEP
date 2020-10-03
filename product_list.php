@@ -146,6 +146,7 @@
     <!-- product list part end-->
     
     <!-- client review part here -->
+<!--
     <section class="client_review">
         <div class="container">
             <div class="row justify-content-center">
@@ -178,7 +179,6 @@
                                 inmediatas de los sectores que sirve.</p>
                             <h5>DECEP-UPRA</h5>
                         </div>
-<!--
                         <div class="single_client_review">
                             <div class="client_img">
                                 <img src="assets/img/client_2.png" alt="#">
@@ -186,12 +186,12 @@
                             <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
                             <h5>- Micky Mouse</h5>
                         </div>
--->
                     </div>
                 </div>
             </div>
         </div>
     </section>
+-->
     <!-- client review part end -->
 
     <!-- Shop Method Start-->

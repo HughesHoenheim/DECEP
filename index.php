@@ -24,7 +24,7 @@
                                 <div class="hero__caption">
 <!--                                    <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>-->
                                     <h1 data-animation="fadeInRight" data-delay=".6s">DECEP <br> UPRA</h1>
-                                    <p data-animation="fadeInRight" data-delay=".8s">Division de Educaci&oacute;n Continua y <br>Estudios Profecionales</p>
+                                    <p data-animation="fadeInRight" data-delay=".8s">Divisi&oacute;n de Educaci&oacute;n Continua y <br>Estudios Profecionales</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
                                         <a href="cursos.php" class="btn hero-btn">Ver Cursos</a>
@@ -822,6 +822,55 @@
            </div>
         </div>
         <!-- Best Product End-->
+        <br> <br> <br> <br> <br> <br> <br> <br> <br>
+         <!-- client review part here -->
+    <section class="client_review">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="client_review_slider owl-carousel">
+                        <div class="single_client_review">
+                            <div class="client_img">
+                                <img src="../DECEP/DECEP_IMG/vision.png" alt="#">
+                            </div>
+                            <h2>Visi&#243;n</h2>
+                            <p>La División de Educación Continua y Estudios Profesionales de la Universidad de Puerto Rico en Arecibo es
+                                un vehículo en virtud del cual la Institución mantiene lazos estrechos con sus egresados; cumple con su
+                                misión de atender las necesidades de educación superior de las comunidades del área norte-central; y con
+                                su compromiso en la búsqueda continua de nuevas formas de responder ágil y creativamente a retos y
+                                oportunidades presentes y futuros. Esta relación se materializa a través de una oferta académica pertinente,
+                                de excelencia, amplia, dinámica y con servicios de alta calidad para el desarrollo profesional y personal de
+                                los estudiantes no-tradicionales.</p>
+                            <h5>DECEP-UPRA</h5>
+                        </div>
+                        <div class="single_client_review">
+                            <div class="client_img">
+                                <img src="../DECEP/DECEP_IMG/mision.png" alt="#">
+                            </div>
+                            <h2>Misi&#243;n</h2>
+                            <p>La División de Educación Continua y Estudios Profesionales de la Universidad de Puerto Rico en Arecibo se
+                                reafirma en su misión de proveer programas y actividades académicas innovadoras y de excelencia, con y
+                                sin crédito, dirigidas a facilitar el aprendizaje a lo largo de la vida. La DECEP viabiliza, garantiza y perpetúa
+                                la misión de servicio de la UPR en Arecibo, su inserción en la corriente de globalización de la educación,
+                                y su contribución al desarrollo socioeconómico y cultural, atendiendo ágil y eficazmente las necesidades
+                                inmediatas de los sectores que sirve.</p>
+                            <h5>DECEP-UPRA</h5>
+                        </div>
+<!--
+                        <div class="single_client_review">
+                            <div class="client_img">
+                                <img src="assets/img/client_2.png" alt="#">
+                            </div>
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
+                            <h5>- Micky Mouse</h5>
+                        </div>
+-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- client review part end -->
         <!-- Best Collection Start -->
 <!--
         <div class="best-collection-area section-padding2">

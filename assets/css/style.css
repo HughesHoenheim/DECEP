@@ -8564,7 +8564,8 @@ del {
 /* line 158, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_button.scss */
 .button-contactForm {
   color: #fff;
-  border-color: #fdcb9e;
+  background-color: #000;
+  border-color: #FBC20E;
   padding: 12px 25px;
 }
 
@@ -8697,7 +8698,7 @@ del {
 
 /* line 18, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_single_blog.scss */
 .single_blog_post .single_blog .single_appartment_content p a {
-  color: #2577fd;
+  color: #FBC20E;
 }
 
 /* line 22, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_single_blog.scss */
@@ -9159,9 +9160,9 @@ input:focus {
 
 /* line 1, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_client_review.scss */
 .client_review {
-  padding: 100px 0;
+  padding: 30px 0;
   text-align: center;
-  background-color: #B08EAD;
+  background-color: #e8e8e8;
   position: relative;
 }
 
@@ -9189,7 +9190,7 @@ input:focus {
 .client_review p {
   font-size: 24px;
   line-height: 1.5;
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 991px) {
@@ -9210,7 +9211,7 @@ input:focus {
 .client_review h5 {
   font-size: 16px;
   margin-top: 25px;
-  color: #fff;
+  color: #000;
   margin-bottom: 0;
 }
 
@@ -9232,11 +9233,11 @@ input:focus {
   font-family: 'Flaticon';
   height: 50px;
   width: 50px;
-  background-color: #E4D3DF;
+  background-color: #FBC20E;
   font-size: 14px;
   border-radius: 50%;
   line-height: 50px;
-  color: #fff;
+  color: #000;
 }
 
 /* line 56, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_client_review.scss */
@@ -9246,8 +9247,8 @@ input:focus {
   font-size: 14px;
   line-height: 40px;
   border-radius: 50%;
-  border: 1px solid #828bb2;
-  color: #828bb2;
+  border: 1px solid #000;
+  color: #FBC20E;
   position: absolute;
   left: -26%;
   top: 48%;
@@ -9257,8 +9258,8 @@ input:focus {
 
 /* line 68, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_client_review.scss */
 .client_review .owl-nav button.owl-prev:hover, .client_review .owl-nav button.owl-next:hover {
-  background-color: #828bb2;
-  color: #fff;
+  background-color: #FBC20E;
+  color: #000;
 }
 
 /* line 73, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_client_review.scss */

@@ -24,7 +24,7 @@
                                 <div class="hero__caption">
 <!--                                    <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>-->
                                     <h1 data-animation="fadeInRight" data-delay=".6s">DECEP <br> UPRA</h1>
-                                    <p data-animation="fadeInRight" data-delay=".8s">Division de Educacion Continua y <br>Estudios Profecionales</p>
+                                    <p data-animation="fadeInRight" data-delay=".8s">Division de Educaci&oacute;n Continua y <br>Estudios Profecionales</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
                                         <a href="cursos.php" class="btn hero-btn">Ver Cursos</a>

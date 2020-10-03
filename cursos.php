@@ -9,7 +9,7 @@
         <!-- slider Area Start-->
         <div class="slider-area ">
             <!-- Mobile Menu -->
-            <div class="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+            <div class="single-slider slider-height2 d-flex align-items-center" data-background="../DECEP/DECEP_IMG/productcat.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -876,6 +876,7 @@
         <!-- Latest Products End -->
 
         <!-- Latest Offers Start -->
+<!--
         <div class="latest-wrapper lf-padding">
             <div class="latest-area latest-height d-flex align-items-center" data-background="assets/img/collection/latest-offer.png">
                 <div class="container">
@@ -896,14 +897,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- man Shape -->
+                 man Shape 
                 <div class="man-shape">
                     <img src="assets/img/collection/latest-man.png" alt="">
                 </div>
             </div>
         </div>
+-->
         <!-- Latest Offers End -->
         <!-- Shop Method Start-->
+<!--
         <div class="shop-method-area section-padding30">
             <div class="container">
                 <div class="row d-flex justify-content-between">
@@ -931,8 +934,10 @@
                 </div>
             </div>
         </div>
+-->
         <!-- Shop Method End-->
         <!-- Gallery Start-->
+<!--
         <div class="gallery-wrapper lf-padding">
             <div class="gallery-area">
                 <div class="container-fluid">
@@ -956,6 +961,7 @@
                 </div>
             </div>
         </div>
+-->
         <!-- Gallery End-->
 
     </main>

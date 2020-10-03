@@ -17,14 +17,14 @@
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
                                 <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
 <!--                                    <img src="assets/img/hero/hero_man.png" alt="">-->
-                                        <img src="../DECEP/DECEP_IMG/lobo-grande.png" alt="">
+                                        <img src="../DECEP/DECEP_IMG/lobo-grande.png" alt="" >
                                 </div>
                             </div>
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
                                 <div class="hero__caption">
-                                    <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>
+<!--                                    <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>-->
                                     <h1 data-animation="fadeInRight" data-delay=".6s">DECEP <br> UPRA</h1>
-                                    <p data-animation="fadeInRight" data-delay=".8s">Best Cloth Collection By 2020!</p>
+                                    <p data-animation="fadeInRight" data-delay=".8s">Division de Educacion Continua y <br>Estudios Profecionales</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
                                         <a href="cursos.php" class="btn hero-btn">Shop Now</a>
@@ -757,22 +757,22 @@
         <!-- Latest Products End -->
         <!-- Best Product Start -->
         <div class="best-product-area lf-padding" >
-           <div class="product-wrapper bg-height" style="background-image: url('assets/img/categori/card.png')">
+           <div class="product-wrapper bg-height" style="background-image: url('../DECEP/DECEP_IMG/unnamed.jpg')">
                 <div class="container position-relative">
                     <div class="row justify-content-between align-items-end">
                         <div class="product-man position-absolute  d-none d-lg-block">
-                            <img src="assets/img/categori/card-man.png" alt="">
+                            <img src="../DECEP/DECEP_IMG/estudiante.png" alt="" width="280" height="620">
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-2 d-none d-lg-block">
                             <div class="vertical-text">
-                                <span>Manz</span>
+                                <span>DECEP</span>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8">
                             <div class="best-product-caption">
-                                <h2>Find The Best Product<br> from Our Shop</h2>
-                                <p>Designers who are interesten creating state ofthe.</p>
-                                <a href="#" class="black-btn">Shop Now</a>
+                                <h2>Encuentra el curso que deceas<br></h2>
+                                <p>Conviertete en un profecional.</p>
+                                <a href="product_list.php" class="black-btn">Matriculate!</a>
                             </div>
                         </div>
                     </div>
@@ -780,15 +780,18 @@
            </div>
            <!-- Shape -->
            <div class="shape bounce-animate d-none d-md-block">
-               <img src="assets/img/categori/card-shape.png" alt="">
+               <img src="../DECEP/DECEP_IMG/diploma.png" alt="" width="150" height="150">
            </div>
         </div>
         <!-- Best Product End-->
         <!-- Best Collection Start -->
+<!--
         <div class="best-collection-area section-padding2">
             <div class="container">
                 <div class="row d-flex justify-content-between align-items-end">
+-->
                     <!-- Left content -->
+<!--
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="best-left-cap">
                             <h2>Best Collection of This Month</h2>
@@ -799,13 +802,17 @@
                             <img src="assets/img/collection/collection1.png" alt="">
                         </div>
                     </div>
+-->
                     <!-- Mid Img -->
+<!--
                      <div class="col-xl-2 col-lg-2 d-none d-lg-block">
                         <div class="best-mid-img mb-30 ">
                             <img src="assets/img/collection/collection2.png" alt="">
                         </div>
                     </div>
+-->
                     <!-- Riht Caption -->
+<!--
                     <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="best-right-cap ">
                            <div class="best-single mb-30">
@@ -841,8 +848,10 @@
                 </div>
             </div>
         </div>
+-->
         <!-- Best Collection End -->
         <!-- Latest Offers Start -->
+<!--
         <div class="latest-wrapper lf-padding">
             <div class="latest-area latest-height d-flex align-items-center" data-background="assets/img/collection/latest-offer.png">
                 <div class="container">
@@ -863,14 +872,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- man Shape -->
+                 man Shape 
                 <div class="man-shape">
                     <img src="assets/img/collection/latest-man.png" alt="">
                 </div>
             </div>
         </div>
+-->
         <!-- Latest Offers End -->
         <!-- Shop Method Start-->
+<!--
         <div class="shop-method-area section-padding30">
             <div class="container">
                 <div class="row d-flex justify-content-between">
@@ -898,8 +909,10 @@
                 </div>
             </div>
         </div>
+-->
         <!-- Shop Method End-->
         <!-- Gallery Start-->
+<!--
         <div class="gallery-wrapper lf-padding">
             <div class="gallery-area">
                 <div class="container-fluid">
@@ -923,6 +936,7 @@
                 </div>
             </div>
         </div>
+-->
         <!-- Gallery End-->
     </main>
                <?php 

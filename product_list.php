@@ -7,7 +7,7 @@
     <!-- slider Area Start-->
     <div class="slider-area ">
         <!-- Mobile Menu -->
-        <div class="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+        <div class="single-slider slider-height2 d-flex align-items-center" data-background="../DECEP/DECEP_IMG/cursosbanner3.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -151,18 +151,32 @@
                     <div class="client_review_slider owl-carousel">
                         <div class="single_client_review">
                             <div class="client_img">
-                                <img src="assets/img/client.png" alt="#">
+                                <img src="../DECEP/DECEP_IMG/vision.png" alt="#">
                             </div>
-                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
-                            <h5>- Micky Mouse</h5>
+                            <h2>Visi&#243;n</h2>
+                            <p>La División de Educación Continua y Estudios Profesionales de la Universidad de Puerto Rico en Arecibo es
+                                un vehículo en virtud del cual la Institución mantiene lazos estrechos con sus egresados; cumple con su
+                                misión de atender las necesidades de educación superior de las comunidades del área norte-central; y con
+                                su compromiso en la búsqueda continua de nuevas formas de responder ágil y creativamente a retos y
+                                oportunidades presentes y futuros. Esta relación se materializa a través de una oferta académica pertinente,
+                                de excelencia, amplia, dinámica y con servicios de alta calidad para el desarrollo profesional y personal de
+                                los estudiantes no-tradicionales.</p>
+                            <h5>DECEP-UPRA</h5>
                         </div>
                         <div class="single_client_review">
                             <div class="client_img">
-                                <img src="assets/img/client_1.png" alt="#">
+                                <img src="../DECEP/DECEP_IMG/mision.png" alt="#">
                             </div>
-                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
-                            <h5>- Micky Mouse</h5>
+                            <h2>Misi&#243;n</h2>
+                            <p>La División de Educación Continua y Estudios Profesionales de la Universidad de Puerto Rico en Arecibo se
+                                reafirma en su misión de proveer programas y actividades académicas innovadoras y de excelencia, con y
+                                sin crédito, dirigidas a facilitar el aprendizaje a lo largo de la vida. La DECEP viabiliza, garantiza y perpetúa
+                                la misión de servicio de la UPR en Arecibo, su inserción en la corriente de globalización de la educación,
+                                y su contribución al desarrollo socioeconómico y cultural, atendiendo ágil y eficazmente las necesidades
+                                inmediatas de los sectores que sirve.</p>
+                            <h5>DECEP-UPRA</h5>
                         </div>
+<!--
                         <div class="single_client_review">
                             <div class="client_img">
                                 <img src="assets/img/client_2.png" alt="#">
@@ -170,6 +184,7 @@
                             <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
                             <h5>- Micky Mouse</h5>
                         </div>
+-->
                     </div>
                 </div>
             </div>
@@ -178,6 +193,7 @@
     <!-- client review part end -->
 
     <!-- Shop Method Start-->
+<!--
     <div class="shop-method-area section-padding30">
         <div class="container">
             <div class="row d-flex justify-content-between">
@@ -205,9 +221,11 @@
             </div>
         </div>
     </div>
+-->
     <!-- Shop Method End-->
 
     <!-- subscribe part here -->
+<!--
     <section class="subscribe_part section_padding">
         <div class="container">
             <div class="row justify-content-center">
@@ -224,6 +242,7 @@
             </div>
         </div>
     </section>
+-->
     <!-- subscribe part end -->
 
     

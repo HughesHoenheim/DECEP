@@ -29,9 +29,9 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">Product</th>
-                <th scope="col">Price</th>
-                <th scope="col">Quantity</th>
+                <th scope="col">Cursos</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
                 <th scope="col">Total</th>
               </tr>
             </thead>
@@ -40,15 +40,15 @@
                 <td>
                   <div class="media">
                     <div class="d-flex">
-                      <img src="assets/img/arrivel/arrivel_1.png" alt="" />
+                      <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/destrezastecyprof/grooming1.jpg" alt="" />
                     </div>
                     <div class="media-body">
-                      <p>Minimalistic shop for multipurpose use</p>
+                      <p>"Gooming"</p>
                     </div>
                   </div>
                 </td>
                 <td>
-                  <h5>$360.00</h5>
+                  <h5>$175.00</h5>
                 </td>
                 <td>
                   <div class="product_count">
@@ -68,22 +68,22 @@
                   </div>
                 </td>
                 <td>
-                  <h5>$720.00</h5>
+                  <h5>$175.00</h5>
                 </td>
               </tr>
               <tr>
                 <td>
                   <div class="media">
                     <div class="d-flex">
-                      <img src="assets/img/arrivel/arrivel_2.png" alt="" />
+                      <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/compuaplicaciones/excel69.jpg" alt="" />
                     </div>
                     <div class="media-body">
-                      <p>Minimalistic shop for multipurpose use</p>
+                      <p>Microsoft Excel B&aacute;sico</p>
                     </div>
                   </div>
                 </td>
                 <td>
-                  <h5>$360.00</h5>
+                  <h5>$175.00</h5>
                 </td>
                 <td>
                   <div class="product_count">
@@ -93,9 +93,10 @@
                   </div>
                 </td>
                 <td>
-                  <h5>$720.00</h5>
+                  <h5>$175.00</h5>
                 </td>
               </tr>
+<!--
               <tr class="bottom_button">
                 <td>
                   <a class="btn_1" href="#">Update Cart</a>
@@ -108,6 +109,7 @@
                   </div>
                 </td>
               </tr>
+-->
               <tr>
                 <td></td>
                 <td></td>
@@ -115,10 +117,10 @@
                   <h5>Subtotal</h5>
                 </td>
                 <td>
-                  <h5>$2160.00</h5>
+                  <h5>$350.00</h5>
                 </td>
               </tr>
-              <tr class="shipping_area">
+            <!--  <tr class="shipping_area">
                 <td></td>
                 <td></td>
                 <td>
@@ -162,79 +164,21 @@
                     <a class="btn_1" href="#">Update Details</a>
                   </div>
                 </td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
           <div class="checkout_btn_inner float-right">
-            <a class="btn_1" href="#">Continue Shopping</a>
-            <a class="btn_1 checkout_btn_1" href="#">Proceed to checkout</a>
+<!--            <a class="btn_1" href="#">Continue Shopping</a>-->
+            <a class="btn_1 checkout_btn_1" href="#">Checkout</a>
           </div>
         </div>
       </div>
   </section>
   <!--================End Cart Area =================-->
 
-<footer>
-    <!-- Footer Start-->
-    <div class="footer-area footer-padding2">
-        <div class="container">
-            <div class="row d-flex justify-content-between">
-                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
-                   <div class="single-footer-caption mb-50">
-                     <div class="single-footer-caption mb-30">
-                          <!-- logo -->
-                         <div class="footer-logo">
-                             <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                         </div>
-                         <div class="footer-tittle">
-                             <div class="footer-pera">
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
-                            </div>
-                         </div>
-                     </div>
-                   </div>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Quick Links</h4>
-                            <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#"> Offers & Discounts</a></li>
-                                <li><a href="#"> Get Coupon</a></li>
-                                <li><a href="#">  Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>New Products</h4>
-                            <ul>
-                                <li><a href="#">Woman Cloth</a></li>
-                                <li><a href="#">Fashion Accessories</a></li>
-                                <li><a href="#"> Man Accessories</a></li>
-                                <li><a href="#"> Rubber made Toys</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Support</h4>
-                            <ul>
-                             <li><a href="#">Frequently Asked Questions</a></li>
-                             <li><a href="#">Terms & Conditions</a></li>
-                             <li><a href="#">Privacy Policy</a></li>
-                             <li><a href="#">Privacy Policy</a></li>
-                             <li><a href="#">Report a Payment Issue</a></li>
-                         </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+
                           <?php 
         
     include('footer.html');

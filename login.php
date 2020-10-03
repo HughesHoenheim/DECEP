@@ -55,7 +55,7 @@
                                         <label for="f-option">Remember me</label>
                                     </div>
                                     <button type="submit" value="submit" class="btn_3">
-                                        log in
+                                        Login
                                     </button>
                                     <a class="lost_pass" href="#">forget password?</a>
                                 </div>

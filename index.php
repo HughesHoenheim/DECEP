@@ -77,7 +77,7 @@
                                 <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/empresarismo1.jpg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Todas</h2>-->
-                                    <span class="best"><a href="cursos.php">Todas las Categorias</a></span>
+                                    <span class="best"><a href="cursos.php">Todas las Categor&iacute;as</a></span>
 <!--                                    <span class="collection">New Collection</span>-->
                                 </div>
                             </div>

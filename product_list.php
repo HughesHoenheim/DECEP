@@ -71,24 +71,24 @@
                                 <div class="single_product_item">
                                     <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/destrezastecyprof/grooming-prices4.jpg" alt="" class="img-fluid">
                                     <h3> <a href="single-product.html">Grooming</a> </h3>
-                                    <p>$175.00 | (3)</p>
+                                    <p>$175.00 | (3) Cr&eacute;ditos</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product5.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Foam filling cotton slow rebound pillows</a> </h3>
-                                    <p>From $5</p>
+                                    <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/fotografia2.jpg" alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Fotograf&iacute;a</a> </h3>
+                                    <p>$175.00 | (3) Cr&eacute;ditos</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <img src="assets/img/categori/product6.png" alt="" class="img-fluid">
-                                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
-                                    <p>From $5</p>
+                                    <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/lenguajedesenas.jpg" alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Lenguaje de Senas</a> </h3>
+                                    <p>$175.00 | (3) Cr&eacute;ditos</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                         <!--   <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
                                     <img src="assets/img/categori/product1.png" alt="" class="img-fluid">
                                     <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
@@ -129,11 +129,13 @@
                                     <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
                                     <p>From $5</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
+<!--
                         <div class="load_more_btn text-center">
                             <a href="#" class="btn_3">Load More</a>
                         </div>
+-->
                     </div>
                 </div>
             </div>

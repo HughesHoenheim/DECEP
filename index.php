@@ -27,7 +27,7 @@
                                     <p data-animation="fadeInRight" data-delay=".8s">Division de Educacion Continua y <br>Estudios Profecionales</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
-                                        <a href="cursos.php" class="btn hero-btn">Shop Now</a>
+                                        <a href="cursos.php" class="btn hero-btn">Ver Cursos</a>
                                     </div>
                                 </div>
                             </div>
@@ -809,7 +809,7 @@
                         <div class="col-xl-8 col-lg-8">
                             <div class="best-product-caption">
                                 <h2>Encuentra el curso que deseas<br></h2>
-                                <p>Conviertete en un profecional.</p>
+                                <p>Convi&eacute;rtete en un profecional.</p>
                                 <a href="product_list.php" class="black-btn">Matricúlate!</a>
                             </div>
                         </div>

@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap text-center">
-                                <h2>Product Category</h2>
+                                <h2>Cursos por Categor&iacute;as</h2>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                         </div>
                         <div class="select-this d-flex">
                             <div class="featured">
-                                <span>Short by: </span>
+                                <span>Sort by: </span>
                             </div>
                             <form action="#">
                                 <div class="select-itms">

@@ -58,9 +58,14 @@
                     </div>
                     <p>250 horas de Contacto | Costo: $1,250.00</p>
                 </div>
-              <div class="add_to_cart">
-                  <a href="#" class="btn_3">add to cart</a>
+                <div class="add_to_cart">
+                  <a href="#" class="btn_3">Agregar al Carro</a> <a href="checkout.php" class="btn_3">Comprar ahora</a>
               </div>
+<!--
+              <div class="checkout">
+                  <a href="checkout.php" class="btn_3">Comprar ahora</a>
+              </div>
+-->
             </div>
           </div>
         </div>

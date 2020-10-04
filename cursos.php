@@ -111,7 +111,7 @@
                                          <h4><a href="#">Dise&ntilde;o Gr&aacute;fico Digital B&aacute;sico</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$175.00</li>
+<!--                                                <li>$175.00</li>-->
                                             <!--<li class="discount">$60.00</li>-->
                                             </ul>
                                         </div>
@@ -137,7 +137,7 @@
                                         <h4><a href="#">Jardineria</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$175.00</li>
+<!--                                                <li>$175.00</li>-->
                                                 <!-- <li class="discount">$60.00</li>-->
                                             </ul>
                                         </div>
@@ -161,7 +161,7 @@
                                         <h4><a href="#">Reparador y Mantenedor de Edificios (Handyman)</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$1,350.00</li>
+<!--                                                <li>$1,350.00</li>-->
                                             <!--<li class="discount">$60.00</li>-->
                                             </ul>
                                         </div>
@@ -184,7 +184,7 @@
                                         <h4><a href="#">Dise&ntilde;o Gr&aacute;fico Digital B&aacute;sico</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$225.00</li>
+<!--                                                <li>$225.00</li>-->
                                             <!--<li class="discount">$60.00</li>-->
                                             </ul>
                                         </div>
@@ -210,7 +210,7 @@
                                         <h4><a href="#">Facturaci&oacute;n y Cobros de planes M&eacute;edicos</a></h4>
                                         <div class="price">
                                             <ul>
-                                                <li>$795.00</li>
+<!--                                                <li>$795.00</li>-->
                                                 <!--<li class="discount">$60.00</li>-->
                                             </ul>
                                         </div>

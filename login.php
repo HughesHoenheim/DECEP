@@ -30,7 +30,7 @@
                         <div class="login_part_text_iner">
                             <h2>¿Primera vez que nos visitas?</h2>
                             <p>¡Crea una cuenta! Para que puedas adquirir nuestros cursos ofrecidos.</p>
-                            <a href="#" class="btn_3">Crear Cuenta</a>
+                            <a href="register.php" class="btn_3">Crear Cuenta</a>
                         </div>
                     </div>
                 </div>

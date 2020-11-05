@@ -58,6 +58,50 @@
                 </div>
             </div>
         </div>
+        <section class="client_review">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="client_review_slider owl-carousel">
+                        <div class="single_client_review">
+                        <h1>Not&iacute;cias</h1>
+                            <div class="client_img">
+                            </div>
+                            <h2>Rapaso del CollegeBoard</h2>
+                            <p>El repaso del CollegeBoard se estara dando del 20 al 22 de Noviembre en la Universidad de Puerto Rico en Arecibo, aprovecha esta oportunidad unica para que puedas emprender un mejor futuro. Presione <a href="index.php" style="color:#FBC20E;">aqu&iacute;</a> para m&aacute;s informaci&#243;n</p>
+                            <h5>DECEP-UPRA</h5>
+                        </div>
+                        <div class="single_client_review">
+                            <h1>Not&iacute;cias</h1>
+                            <div class="client_img">
+                            </div>
+                            <h2>Nuevo curso de diseño gr&aacute;fico</h2>
+                            <p>Aprovecha esta oportunidad &uacute;nica y matric&uacute;late en este curso que se estara dando por tiempo limitado, conviertete en un profecional en las artes gr&aacute;ficas en poco tiempo. Presione <a href="index.php" style="color:#FBC20E;">aqu&iacute;</a> para matricularte.</p>
+                            <h5>DECEP-UPRA</h5>
+                        </div>
+                        <div class="single_client_review">
+                            <h1>Not&iacute;cias</h1>
+                            <div class="client_img">
+                            </div>
+                            <h2>Actividad Virtual</h2>
+                            <p>Conectate en esta actividad virtual junto a los instructores e integrantes de DECEP, esta actividad se llevara acabo para que expresen sus experiencias de sus respectivos cursos que estan cursando. Esta actividad virtual se llevara acabo por la aplicai&oacute;n ZOOM. Presione <a href="index.php" style="color:#FBC20E;">aqu&iacute;</a> para m&aacute;s detalles</p>
+                            <h5>DECEP-UPRA</h5>
+                        </div>
+<!--
+                        <div class="single_client_review">
+                            <div class="client_img">
+                                <img src="assets/img/client_2.png" alt="#">
+                            </div>
+                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
+                            <h5>- Micky Mouse</h5>
+                        </div>
+-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            <br>
         <!-- slider Area End-->
         <!-- Category Area Start-->
         <section class="category-area section-padding30">
@@ -824,6 +868,10 @@
         <!-- Best Product End-->
         <br> <br> <br> <br> <br> <br> <br> <br> <br>
          <!-- client review part here -->
+        
+        
+<!-- Emma esta parte es la que tienes que usar para tu parte..
+
     <section class="client_review">
         <div class="container">
             <div class="row justify-content-center">
@@ -856,7 +904,6 @@
                                 inmediatas de los sectores que sirve.</p>
                             <h5>DECEP-UPRA</h5>
                         </div>
-<!--
                         <div class="single_client_review">
                             <div class="client_img">
                                 <img src="assets/img/client_2.png" alt="#">
@@ -864,12 +911,14 @@
                             <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
                             <h5>- Micky Mouse</h5>
                         </div>
--->
                     </div>
                 </div>
             </div>
         </div>
     </section>
+-->
+        
+        
     <!-- client review part end -->
         <!-- Best Collection Start -->
 <!--

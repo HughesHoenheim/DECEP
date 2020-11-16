@@ -1,6 +1,6 @@
 <?php 
         
-    include('header.html');
+        include('assets/includes/header.html');
 
 ?>
 
@@ -970,6 +970,6 @@
     </main>
                             <?php 
         
-    include('footer.html');
+        include('assets/includes/footer.html');
 
 ?>

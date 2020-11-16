@@ -1,6 +1,6 @@
 <?php 
         
-    include('header.html');
+    include('assets/includes/header.html');
 
 ?>
 
@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap text-center">
-                                <h2>Product Catagori</h2>
+                                <h2>Product Category</h2>
                             </div>
                         </div>
                     </div>
@@ -1020,6 +1020,6 @@
                </div>
                             <?php 
         
-    include('footer.html');
+        include('assets/includes/footer.html');
 
 ?>

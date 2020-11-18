@@ -32,6 +32,20 @@ CREATE TABLE `admin` (
 
 /*Data for the table `admin` */
 
+/*Table structure for table `cart` */
+
+DROP TABLE IF EXISTS `cart`;
+
+CREATE TABLE `cart` (
+  `order_id` int(10) DEFAULT NULL,
+  `user_id` int(10) DEFAULT NULL,
+  `course_id` varchar(10) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `price` float(7,2) DEFAULT NULL,
+  `qty` int(5) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+/*Data for the table `cart` */
+
 /*Table structure for table `category` */
 
 DROP TABLE IF EXISTS `category`;
@@ -53,16 +67,12 @@ CREATE TABLE `course` (
   `course_id` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
   `course_name` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
   `image` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `instructor_id` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
   `description` varchar(255) COLLATE utf8_spanish_ci NOT NULL,
-  `capacity` int(3) NOT NULL,
-  `schedule` time DEFAULT NULL,
   `contact_hours` int(3) unsigned NOT NULL,
   `price` float(7,2) NOT NULL,
   `category_id` int(5) NOT NULL,
   `subcategory_id` int(5) DEFAULT NULL,
-  `section` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
-  `room` varchar(10) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `section_id` int(5) NOT NULL,
   `keywords` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
   `status` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
   PRIMARY KEY (`course_id`)
@@ -103,6 +113,23 @@ CREATE TABLE `order` (
 
 /*Data for the table `order` */
 
+/*Table structure for table `section` */
+
+DROP TABLE IF EXISTS `section`;
+
+CREATE TABLE `section` (
+  `section_id` int(5) NOT NULL AUTO_INCREMENT,
+  `course_id` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `semester` varchar(5) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `year` year(4) DEFAULT NULL,
+  `capacity` int(5) NOT NULL,
+  `room` varchar(5) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `time_slot_id` int(11) NOT NULL,
+  PRIMARY KEY (`section_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+/*Data for the table `section` */
+
 /*Table structure for table `subcategory` */
 
 DROP TABLE IF EXISTS `subcategory`;
@@ -115,6 +142,50 @@ CREATE TABLE `subcategory` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 /*Data for the table `subcategory` */
+
+/*Table structure for table `takes` */
+
+DROP TABLE IF EXISTS `takes`;
+
+CREATE TABLE `takes` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `course_id` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `section_id` varchar(5) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `semester` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `year` year(4) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+/*Data for the table `takes` */
+
+/*Table structure for table `teaches` */
+
+DROP TABLE IF EXISTS `teaches`;
+
+CREATE TABLE `teaches` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `course_id` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `section_id` int(5) DEFAULT NULL,
+  `semester` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `year` year(4) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+/*Data for the table `teaches` */
+
+/*Table structure for table `time_slot` */
+
+DROP TABLE IF EXISTS `time_slot`;
+
+CREATE TABLE `time_slot` (
+  `time_slot_id` int(5) NOT NULL AUTO_INCREMENT,
+  `day` varchar(10) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `start_time` time DEFAULT NULL,
+  `end_time` time DEFAULT NULL,
+  PRIMARY KEY (`time_slot_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+/*Data for the table `time_slot` */
 
 /*Table structure for table `user` */
 

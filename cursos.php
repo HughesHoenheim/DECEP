@@ -1,7 +1,7 @@
 <?php 
         
         include('assets/includes/header.html');
-
+        include ("assets/includes/functions.php");
 ?>
 
     <main>
@@ -33,6 +33,8 @@
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Todos</a>
                                     
+                                    <?php getCats(); ?>
+<!--
                                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Cursos Cortos</a>
                                     
                                     <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Certificaciones Profesionales</a>
@@ -40,6 +42,7 @@
                                     <a class="nav-item nav-link" id="nav-continua-tab" data-toggle="tab" href="#nav-continua" role="tab" aria-controls="nav-continua" aria-selected="false">Educaci&oacute;n continua</a>
                                     
                                     <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">Certificaciones Ocupacionales</a>
+-->
                                 </div>
                             </nav>
                             <!--End Nav Button  -->
@@ -65,6 +68,9 @@
                     <!-- card one -->
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row">
+                            
+                            <?php getSubCat(); ?>
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
@@ -72,47 +78,48 @@
                                         <a href="product_list.php"> <img  src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/intro_compu.jpg" alt=""></a>
                                         
                                         <div class="new-product">
-                                            <!--  <span>New</span>-->
+                                              <span>New</span>
                                         </div>
                                     </div>
                                     <div class="product-caption">
-                                        <!--<div class="product-ratting">
+                                        <div class="product-ratting">
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
-                                        </div>-->
+                                        </div>
                                         <h4><a href="#">Computadora y sus Aplicaciones</a></h4>
                                         <div class="price">
-                                            <!--
+                                            
                                             <ul>
                                                 <li>$175.00</li>
                                                 <li> (3) Cr&eacute;ditos</li>
                                             </ul>
-                                            -->
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
                                     <a href="product_list.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/fotografia-digital.jpg" alt=""></a>
                                     </div>
                                     <div class="product-caption">
-                                        <!--<div class="product-ratting">
+                                        <div class="product-ratting">
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
-                                        </div>-->
+                                        </div>
                                          <h4><a href="#">Dise&ntilde;o Gr&aacute;fico Digital B&aacute;sico</a></h4>
                                         <div class="price">
                                             <ul>
-<!--                                                <li>$175.00</li>-->
-                                            <!--<li class="discount">$60.00</li>-->
+
                                             </ul>
                                         </div>
                                     </div>
@@ -123,22 +130,20 @@
                                     <div class="product-img">
                                         <a href="product_list.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/jardineria.jpg" alt=""></a>
                                         <div class="new-product">
-                                        <!--<span>New</span>-->
                                         </div>
                                     </div>
                                     <div class="product-caption">
-                                        <!--<div class="product-ratting">
+                                        <div class="product-ratting">
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
-                                        </div>-->
+                                        </div>
                                         <h4><a href="#">Jardineria</a></h4>
                                         <div class="price">
                                             <ul>
-<!--                                                <li>$175.00</li>-->
-                                                <!-- <li class="discount">$60.00</li>-->
+
                                             </ul>
                                         </div>
                                     </div>
@@ -151,18 +156,17 @@
                                         <a href="product_list.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certiocupacionales/handyman-services1.jpg" alt=""></a>
                                     </div>
                                     <div class="product-caption">
-                                        <!--<div class="product-ratting">
+                                        <div class="product-ratting">
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
-                                        </div>-->
+                                        </div>
                                         <h4><a href="#">Reparador y Mantenedor de Edificios (Handyman)</a></h4>
                                         <div class="price">
                                             <ul>
-<!--                                                <li>$1,350.00</li>-->
-                                            <!--<li class="discount">$60.00</li>-->
+
                                             </ul>
                                         </div>
                                     </div>
@@ -174,18 +178,17 @@
                                         <a href="product_list.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/compuaplicaciones/diseno_grafico.png" alt=""></a>
                                     </div>
                                     <div class="product-caption">
-                                       <!-- <div class="product-ratting">
+                                        <div class="product-ratting">
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
-                                        </div>-->
+                                        </div>
                                         <h4><a href="#">Dise&ntilde;o Gr&aacute;fico Digital B&aacute;sico</a></h4>
                                         <div class="price">
                                             <ul>
-<!--                                                <li>$225.00</li>-->
-                                            <!--<li class="discount">$60.00</li>-->
+
                                             </ul>
                                         </div>
                                     </div>
@@ -196,27 +199,26 @@
                                     <div class="product-img">
                                         <a href="product_list.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/facturacionMED2.jpg" alt=""></a>
                                         <div class="new-product">
-                                            <!--<span>New</span>-->
                                         </div>
                                     </div>
                                     <div class="product-caption">
-                                        <!--<div class="product-ratting">
+                                        <div class="product-ratting">
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
-                                        </div>-->
+                                        </div>
                                         <h4><a href="#">Facturaci&oacute;n y Cobros de planes M&eacute;edicos</a></h4>
                                         <div class="price">
                                             <ul>
-<!--                                                <li>$795.00</li>-->
-                                                <!--<li class="discount">$60.00</li>-->
+
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+-->
                         </div>
                     </div>
                     <!-- Card two -->
@@ -228,21 +230,16 @@
                                         <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/intro_compu.jpg" alt="">
                                     </div>
                                     <div class="product-caption">
-                                        <!--<div class="product-ratting">
+                                        <div class="product-ratting">
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
-                                        </div>-->
+                                        </div>
                                         <h4><a href="#">Computadoras y Aplicaciones</a></h4>
                                         <div class="price">
-<!--
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
--->
+
                                         </div>
                                     </div>
                                 </div>
@@ -253,21 +250,16 @@
                                         <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/fotografia-digital.jpg" alt="">
                                     </div>
                                     <div class="product-caption">
-                                        <!--<div class="product-ratting">
+                                        <div class="product-ratting">
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
-                                        </div>-->
+                                        </div>
                                         <h4><a href="#">Destrezas t&eacute;cnicas y profesionales</a></h4>
                                         <div class="price">
-<!--
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
--->
+
                                         </div>
                                     </div>
                                 </div>
@@ -277,25 +269,19 @@
                                     <div class="product-img">
                                         <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/cursoscortos/jardineria.jpg" alt="">
                                         <div class="new-product">
-<!--                                            <span>New</span>-->
                                         </div>
                                     </div>
                                     <div class="product-caption">
-                                       <!-- <div class="product-ratting">
+                                        <div class="product-ratting">
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star low-star"></i>
                                             <i class="far fa-star low-star"></i>
-                                        </div>-->
+                                        </div>
                                         <h4><a href="#">Jardiner&iacute;a</a></h4>
                                         <div class="price">
-<!--
-                                            <ul>
-                                                <li>$40.00</li>
-                                                <li class="discount">$60.00</li>
-                                            </ul>
--->
+
                                         </div>
                                     </div>
                                 </div>

@@ -24,7 +24,9 @@ function getCats(){
 
         if($cat_status == "active"){
             
-            echo "<a class='nav-item nav-link' id='nav-home-tab' data-toggle='tab' href='cursos.php?cat_id=$cat_id' role='tab' aria-controls='nav-home' aria-selected='true'>$cat_name</a>";
+//            echo "<a class='nav-item nav-link' id='nav-home-tab' data-toggle='tab' href='cursos.php?cat_id=$cat_id' role='tab' aria-controls='nav-home' aria-selected='true'>$cat_name</a>";
+            
+            echo "<a class='nav-item nav-link' href='course.php?cat_id=$cat_id'>$cat_name</a>";
 
         }
     }
@@ -33,15 +35,41 @@ function getCats(){
 
 
 //Organizar cursos por subcategoria
-function getSubCat(){
+function getCourseCat(){
     
-    $_GET['cat_id'] = 1;
+//    $_GET['cat_id'] = 1;
     if(isset($_GET['cat_id'])){
       $cat_id = $_GET['cat_id'];  
     
     global $dbc;
+        
+        ///Determinar columna para ordenar.
+            if(isset($_GET['order']))
+            $orden=$_GET['order'];
+            else
+            $orden = 'r';
+        
+            switch($orden)
+            {
+            case 'a': $order_by = 'course_name ASC LIMIT 0,9';
+                break;
+                
+            case 'z': $order_by = 'course_name DESC LIMIT 0,9';
+                break;
+                
+            case 'h': $order_by = 'price DESC LIMIT 0,9';
+                break;
+                
+            case 'l': $order_by = 'price ASC LIMIT 0,9';
+                break;
 
-    $get_cat_course = "select * from course where category_id = '$cat_id' order by RAND() LIMIT 0,6";
+            case 'r': $order_by = 'RAND() LIMIT 0,9';
+                break;
+                
+            default: $order_by = 'RAND() LIMIT 0,9';
+            }
+
+    $get_cat_course = "select * from course where category_id = '$cat_id' order by RAND() LIMIT 0,9";
         
     $run_cat_course = mysqli_query($dbc, $get_cat_course);
     
@@ -69,7 +97,7 @@ function getSubCat(){
                       echo "<div class='col-xl-4 col-lg-4 col-md-6'>
                                 <div class='single-product mb-60'>
                                     <div class='product-img'>
-                                        <a href='cursos.php'> <img  src='DECEP_IMG/Cursos_IMG/otros/$cour_image' alt=''></a>
+                                        <a href='course.php'> <img  src='decep_images/cursos/$cour_image' alt='' width='500' height='350'></a>
                                         <div class='new-product'>
                                         </div>
                                     </div>
@@ -83,6 +111,84 @@ function getSubCat(){
                 }
         }
     }
+}
+
+
+//Funcion para presentar los cursos
+function getCourse(){
+    
+//    if(!isset($_GET['search'])){
+    if(!isset($_GET['cat_id'])){
+//        if(!isset($_GET['type_id'])){
+            
+            global $dbc;
+    
+            //Determinar columna para ordenar.
+            if(isset($_GET['order']))
+            $orden=$_GET['order'];
+            else
+            $orden = 'r';
+        
+            switch($orden)
+            {
+            case 'a': $order_by = 'prod_name ASC LIMIT 0,9';
+                break;
+                
+            case 'z': $order_by = 'prod_name DESC LIMIT 0,9';
+                break;
+                
+            case 'h': $order_by = 'price DESC LIMIT 0,9';
+                break;
+                
+            case 'l': $order_by = 'price ASC LIMIT 0,9';
+                break;
+
+            case 'r': $order_by = 'RAND() LIMIT 0,9';
+                break;
+                
+            default: $order_by = 'RAND() LIMIT 0,9';
+            }
+            
+
+            $get_course = "select * from course order by $order_by";
+        
+            $run_course = mysqli_query($dbc, $get_course);
+        
+            while ($row_cat_course=mysqli_fetch_array($run_course)){
+        
+            $cour_id       =  $row_cat_course['course_id'];
+            $cour_name     =  $row_cat_course['course_name'];
+            $cour_cat      =  $row_cat_course['category_id'];
+            $cour_subcat   =  $row_cat_course['subcategory_id'];
+            $cour_image    =  $row_cat_course['image'];
+            $cour_desc     =  $row_cat_course['description'];
+            $cour_keys     =  $row_cat_course['keywords'];
+            $cour_price    =  $row_cat_course['price'];
+            $cour_status   =  $row_cat_course['status'];
+        
+                    if($cour_status == 'active')
+                {
+                      echo "<div class='col-xl-4 col-lg-4 col-md-6'>
+                                <div class='single-product mb-60'>
+                                    <div class='product-img'>
+                                        <a href='course.php'> <img  src='decep_images/cursos/$cour_image' alt='' width='500' height='350'></a>
+                                        <div class='new-product'>
+                                        </div>
+                                    </div>
+                                    <div class='product-caption'>
+                                        <h4><a href=''>$cour_name</a></h4>
+                                        <div class='price'>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>";
+                }
+                }
+//            }
+    
+        }
+
+//    }
 }
 
 

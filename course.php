@@ -1,6 +1,6 @@
 <?php 
         
-        include('assets/includes/header.html');
+        include('assets/includes/header.php');
         include ("assets/includes/functions.php");
 ?>
 

@@ -1,6 +1,8 @@
 <?php 
         
-        include('assets/includes/header.html');
+        include('assets/includes/header.php');
+        
+        
 
 ?>
 
@@ -23,7 +25,7 @@
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
                                 <div class="hero__caption">
 <!--                                    <span data-animation="fadeInRight" data-delay=".4s">60% Discount</span>-->
-                                    <h1 data-animation="fadeInRight" data-delay=".6s">DECEP <br> UPRA</h1>
+                                    <h1 data-animation="fadeInRight" data-delay=".6s">DECEP <br> UPRA  <?php echo $_SESSION['user_name']."!"; ?></h1>
                                     <p data-animation="fadeInRight" data-delay=".8s">Divisi&oacute;n de Educaci&oacute;n Continua y <br>Estudios Profecionales</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">

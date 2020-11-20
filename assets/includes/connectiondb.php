@@ -4,8 +4,8 @@
 
    $host = 'localhost';
    $username = 'root';
-//$password = '';
-$password = 'Jo846104895';
+$password = '';
+//$password = 'Jo846104895';
    $db = 'decep_db';
             
     $dbc = @mysqli_connect($host, $username, $password, $db)

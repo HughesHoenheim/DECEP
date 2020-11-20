@@ -1,8 +1,89 @@
+<!DOCTYPE html>
 <?php 
         
-        include('assets/includes/header.html');
+        include("assets/includes/header.php");
+       
 
 ?>
+
+
+<html>
+<?php
+if($_SERVER['REQUEST_METHOD'] == 'POST') 
+{
+    if( (!empty($_POST['email'])) && (!empty($_POST['password'])) ) 
+		{ //conectarme a ver si existe usuario    
+			if(include_once('assets/includes/connectiondb.php')) // Conectarse al servidor SQL
+	   		{
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+
+               echo "<br><h3>Email: $email</h3>";
+               echo "<h3>Password: $password</h3><br>";
+                $query = "SELECT * FROM user WHERE email = '$email'  AND pass = '$password'";
+                $r = mysqli_query($dbc, $query);
+                
+                $query2 = "SELECT * FROM admin WHERE email = '$email'  AND pass = '$password'";
+                $r2 = mysqli_query($dbc, $query2);
+                
+                if ($row = mysqli_fetch_array($r))
+                {
+                    if ( (strtolower($_POST['email']) == $row['email']) && ($_POST['password'] ==$row['pass']) && ($row['user_status'] == 'active') )
+                    { // El usuario existe en la tabla de customer.
+      
+                        $_SESSION['user_id'] = $row['user_id'];
+                        $_SESSION['user_name'] = $row['firstname'];
+
+                        // echo "query1= $query";
+                        // echo "query2= $query2";
+                        // echo "customer id in session= ". $_SESSION['cust_id'];
+                        // echo "customer name in session= ". $_SESSION['cust_name'];
+
+                       // header('Location: index.php');
+                        
+                      echo "<meta http-equiv=\"refresh\" content=\"0;url=index.php\">"  ;
+                     exit();
+                    }
+                    else{
+                        print '<h3>Su cuenta aparenta estar inactiva! Por favor contacte un administrador para restaurar el acceso a su cuenta.<br><br><a href="login.php"> Login </a></h3>';
+                    }
+                }
+                else if($row2 = mysqli_fetch_array($r2))
+                {
+                    if ( (strtolower($_POST['email']) == $row2['email']) && ($_POST['password'] ==$row2['pass']) && ($row2['admin_status'] == 'active') )
+                    {//El usuario es admin.
+                        
+                        $_SESSION['admin_name'] = $row2['firstname'];
+                        $_SESSION['admin_id'] = $row2['admin_id'];
+                        header('Location: admin/index.php');
+                        exit();
+                    }
+                }
+                else 
+                { // Usuario no existe en la tabla
+
+                    print '<h3>El email y/o password entrados no concuerdan con nuestros archivos!<br><br>Vuelva a intentarlo.<a href="login.php"> Login </a></h3>';
+
+                }
+			}
+			else
+				print'<p> No se pudo conectar a servidor MYSQL</p>';
+		
+        }
+        else
+        {
+            // No entró uno de los campos
+
+            print '<p>Asegúrese de entrar su username y password. Vuelva a intentarlo...<br /><a href="login.php"> Login </a></p>';
+
+
+
+        }
+} 
+else // No llegó por un submit, por lo tanto hay que presentar el formulario
+{  
+?>
+
 
     <!-- slider Area Start-->
     <div class="slider-area ">
@@ -39,13 +120,13 @@
                         <div class="login_part_form_iner">
                             <h3>Bienvenidos! <br><br>
                                 Iniciar Sesi&oacute;n</h3>
-                            <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+                            <form class="row contact_form" acction= "login.php" method="post" >
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="text" class="form-control" id="name" name="name" value=""
-                                        placeholder="Username">
+                                    <input type="email" class="form-control" id="email" name="email" 
+                                        placeholder="Email">
                                 </div>
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="password" class="form-control" id="password" name="password" value=""
+                                    <input type="password" class="form-control" id="pass" name="password" required
                                         placeholder="Password">
                                 </div>
                                 <div class="col-md-12 form-group">
@@ -53,7 +134,7 @@
                                         <input type="checkbox" id="f-option" name="selector">
                                         <label for="f-option">Recordar</label>
                                     </div>
-                                    <button type="submit" value="submit" class="btn_3">
+                                    <button type="submit" name="submit" class="btn_3">
                                         Login
                                     </button>
                                     <a class="lost_pass" href="#">¿Olvidó su contraseña?</a>
@@ -65,11 +146,17 @@
             </div>
         </div>
     </section>
+<?php 
+
+}
+
+?>
     <!--================login_part end =================-->
 
 
-                               <?php 
+<?php 
         
-        include('assets/includes/footer.html');
+    include('assets/includes/footer.html');
 
 ?>
+    </html>

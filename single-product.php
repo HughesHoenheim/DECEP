@@ -40,7 +40,7 @@ if(isset($_POST["add_to_cart"]))
         );
         $_SESSION["shopping_cart"][0] = $item_array;
         echo '<script>alert("Item Added to cart!")</script>'; 
-        echo '<script>window.location="shop.php"</script>'; 
+        echo '<script>window.location="course.php"</script>'; 
     }
     
 }

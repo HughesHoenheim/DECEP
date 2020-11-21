@@ -1,21 +1,6 @@
 <?php 
         
-    include('assets/includes/header.php');
-    if(isset($_GET["action"]))
-{
-	if($_GET["action"] == "delete")
-	{
-		foreach($_SESSION["shopping_cart"] as $keys => $values)
-		{
-			if($values["item_id"] == $_GET["id"])
-			{
-				unset($_SESSION["shopping_cart"][$keys]);
-				echo '<script>alert("Item Removed")</script>';
-				echo '<script>window.location="cart.php"</script>';
-			}
-		}
-	}
-}
+    include('assets/includes/header.html');
 
 ?>
 
@@ -51,43 +36,19 @@
               </tr>
             </thead>
             <tbody>
-                
-                     <?php
-                                
-                                 
-                                
-                                    if(!empty($_SESSION["shopping_cart"]))
-                                    {
-                                        $total=0;
-                                        foreach ($_SESSION["shopping_cart"] as $keys => $values)
-                                        {
-                                           
-                                            $img_id=$values['item_id'];
-                                            //Query para solo cojer la imagen del producto utilizando el id de la bd = id del array shopping_cart
-                                            $get_cour = "select image from course where course_id ='$img_id'";
-                                            $run_cour = mysqli_query($dbc, $get_cour);
-                                
-                                                if($row_cour=mysqli_fetch_array($run_cour))
-                                                    $cour_image = $row_cour['image'];
-                                            {
-              
-                                ?>
-                
               <tr>
                 <td>
                   <div class="media">
                     <div class="d-flex">
-                      <img src="../DECEP/decep_images/cursos/<?php echo $cour_image; ?>" alt="" />
-                        <?php } ?>
+                      <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/destrezastecyprof/grooming1.jpg" alt="" />
                     </div>
-                      
                     <div class="media-body">
-                      <p><?php echo $values["item_name"]; ?></p>
+                      <p>"Gooming"</p>
                     </div>
                   </div>
                 </td>
                 <td>
-                  <h5><?php echo $values["item_price"]; ?></h5>
+                  <h5>$175.00</h5>
                 </td>
                 <td>
                   <div class="product_count">
@@ -102,22 +63,39 @@
                       <i class="ti-angle-down"></i>
                     </button> -->
                     <span class="input-number-decrement"> <i class="ti-minus"></i></span>
-                    <input class="input-number" type="text" value="<?php echo $values["item_quantity"]; ?>" min="0" max="10">
+                    <input class="input-number" type="text" value="1" min="0" max="10">
                     <span class="input-number-increment"> <i class="ti-plus"></i></span>
                   </div>
                 </td>
                 <td>
-                  <h5>$<?php echo number_format($values["item_quantity"] * $values["item_price"], 2); ?></h5>
+                  <h5>$175.00</h5>
                 </td>
-                     <td> <a class="btn_1" href="cart.php?action=delete&id=<?php echo $values["item_id"]; ?>"/>Delete</td>
               </tr>
-                
-              <?php
-                                    $total = $total + ($values["item_quantity"] * $values["item_price"]);
-                                    }
-                                    $_SESSION['total'] =$total
-                                 
-                                ?>
+              <tr>
+                <td>
+                  <div class="media">
+                    <div class="d-flex">
+                      <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/compuaplicaciones/excel69.jpg" alt="" />
+                    </div>
+                    <div class="media-body">
+                      <p>Microsoft Excel B&aacute;sico</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <h5>$175.00</h5>
+                </td>
+                <td>
+                  <div class="product_count">
+                      <span class="input-number-decrement"> <i class="ti-minus"></i></span>
+                      <input class="input-number" type="text" value="1" min="0" max="10">
+                      <span class="input-number-increment"> <i class="ti-plus"></i></span>
+                  </div>
+                </td>
+                <td>
+                  <h5>$175.00</h5>
+                </td>
+              </tr>
 <!--
               <tr class="bottom_button">
                 <td>
@@ -139,7 +117,7 @@
                   <h5>Subtotal</h5>
                 </td>
                 <td>
-                  <h5><span>$ <?php echo number_format($total, 2); ?></span></h5>
+                  <h5>$350.00</h5>
                 </td>
               </tr>
             <!--  <tr class="shipping_area">
@@ -190,25 +168,9 @@
             </tbody>
           </table>
           <div class="checkout_btn_inner float-right">
-<!--            <a class="btn_1" href="#">Continue Shopping</a>
-            <a class="btn_1 checkout_btn_1" href="#">Checkout</a>-->
-              
-              
-               <form action="cart.php" method="post" enctype="multipart/form-data">
-                                
-                                <input type="submit" class="btn_1 checkout_btn_1" name="add_to_cartDB" value="CHECK OUT">
-                                </form>
-              
-              
+<!--            <a class="btn_1" href="#">Continue Shopping</a>-->
+            <a class="btn_1 checkout_btn_1" href="#">Checkout</a>
           </div>
-            <?php 
-                                 }
-                                 else {
-                                    print '<table>
-                                    </table>';
-                                    echo "<h2 style='text-align:center; color:red;'>Your Shopping Cart is Empty!</h2>";
-                                }
-					        ?>
         </div>
       </div>
   </section>
@@ -217,7 +179,7 @@
 
 
 
-<?php 
+                          <?php 
         
         include('assets/includes/footer.html');
 

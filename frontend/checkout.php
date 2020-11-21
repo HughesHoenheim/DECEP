@@ -1,8 +1,6 @@
 <?php 
         
-  include('assets/includes/header.php');
-
-
+  include('../commons/includes/header.html');
 
 ?>
 
@@ -10,7 +8,7 @@
   <!-- slider Area Start-->
   <div class="slider-area ">
     <!-- Mobile Menu -->
-    <div class="single-slider slider-height2 d-flex align-items-center" data-background="../DECEP/DECEP_IMG/checkoutbanner.jpg">
+    <div class="single-slider slider-height2 d-flex align-items-center" data-background="../commons/decep_images/checkoutbanner.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">

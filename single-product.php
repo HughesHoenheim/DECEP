@@ -1,6 +1,49 @@
 <?php 
         
-        include('assets/includes/header.html');
+        include('assets/includes/header.php');
+        include ("assets/includes/functions.php");
+
+if(isset($_POST["add_to_cart"]))
+{
+    if(isset($_SESSION["shopping_cart"]))
+    {
+        $item_array_id = array_column($_SESSION["shopping_cart"],"item_id");
+        if(!in_array($_GET["id"], $item_array_id))
+        {
+            $count = count($_SESSION["shopping_cart"]);
+            $item_array = array(
+            
+            'item_id'       => $_GET["id"],
+            'item_name'     => $_POST["hidden_name"],
+            'item_price'    => $_POST["hidden_price"],
+            'item_quantity' => $_POST["quantity"]
+            
+            );
+            $_SESSION["shopping_cart"][$count] =  $item_array;
+            echo '<script>alert("Item Added to cart!")</script>'; 
+            echo '<script>window.location="course.php"</script>'; 
+        }
+        else
+        {
+           echo '<script>alert("Item Already Added")</script>'; 
+            echo '<script>window.location="shop.php"</script>'; 
+        }
+    }
+    else
+    {
+        $item_array = array(
+            'item_id'       => $_GET["id"],
+            'item_name'     => $_POST["hidden_name"],
+            'item_price'    => $_POST["hidden_price"],
+            'item_quantity' => $_POST["quantity"]
+        
+        );
+        $_SESSION["shopping_cart"][0] = $item_array;
+        echo '<script>alert("Item Added to cart!")</script>'; 
+        echo '<script>window.location="shop.php"</script>'; 
+    }
+    
+}
 
 ?>
 
@@ -26,41 +69,64 @@
     <!-- slider Area End-->
 
   <!--================Single Product Area =================-->
+<?php
+                    if(isset($_GET['cour_id'])){
+
+                    $course_id = $_GET['cour_id'];
+
+                    $get_cour = "select * from course where course_id='$course_id'";
+
+                    $run_cour = mysqli_query($dbc, $get_cour);
+
+                        if ($row_cour=mysqli_fetch_array($run_cour)){
+
+                            $pro_id = $row_cour['course_id'];
+                            $pro_name = $row_cour['course_name'];
+                            $pro_image = $row_cour['image'];
+                            $pro_desc =  $row_cour['description'];
+                            $pro_price = $row_cour['price'];
+                            $contact_hours=$row_cour['contact_hours'];
+                        } 
+                    }
+        
+                ?>
   <div class="product_image_area">
     <div class="container">
       <div class="row justify-content-center">
+    
         <div class="col-lg-8">
+            
           <div class="product_img_slide owl-carousel">
             <div class="single_product_img">
-              <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certiocupacionales/m6.jpg" alt="#" class="img-fluid">
+              <img src="decep_images/cursos/<?php echo $row_cour['image'] ?>" alt="#" class="img-fluid">
             </div>
-            <div class="single_product_img">
-              <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certiocupacionales/m9.jpg" alt="#" class="img-fluid">
-            </div>
-            <div class="single_product_img">
-              <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certiocupacionales/m8.jpg" alt="#" class="img-fluid">
-            </div>
+         
+            
           </div>
         </div>
         <div class="col-lg-8">
+           <form method="post" action="single-product.php?action=add&id=<?php echo $row_cour['course_id']; ?>">
           <div class="single_product_text text-center">
-            <h3>Mec&aacute;nica de Reparaci&oacute;n y Mantenimiento de Motores Pequenos</h3>
+            <h3><?php echo $row_cour['course_name']; ?></h3>
             <p>
-                Los participantes se capacitar&aacute;n con las destrezas y conocimientos en la reparaci&oacute;n y mantenimiento de motores pequenos. Estudiar&aacute;n la combusti&oacute;n interna de motores de 2 y 4 ciclos o tiempos, sistemas electr&oacute;nicos, lubricaci&oacute;n y enfriamiento, entre otros. Una vez completado el curso podr&aacute;n reparar y dar mantenimiento a todo tipo de motor pequeno. Obtendr&aacute;n las destrezas para la b&uacute;squeda de empleo o auto-emplearse.
+                 <?php echo $pro_desc; ?>
             </p>
             <div class="card_area">
                 <div class="product_count_area">
                     <p>Cantidad</p>
                     <div class="product_count d-inline-block">
                         <span class="product_count_item inumber-decrement"> <i class="ti-minus"></i></span>
-                        <input class="product_count_item input-number" type="text" value="1" min="0" max="10">
+                        <input class="product_count_item input-number" type="text" name="quantity" value="1" min="0" max="10">
                         <span class="product_count_item number-increment"> <i class="ti-plus"></i></span>
                     </div>
-                    <p>250 horas de Contacto | Costo: $1,250.00</p>
+                    <p> <?php echo $contact_hours; ?> horas de Contacto | Costo: <?php echo $pro_price ?></p>
                 </div>
                 <div class="add_to_cart">
-                  <a href="#" class="btn_3">Agregar al Carro</a> <a href="checkout.php" class="btn_3">Comprar ahora</a>
+                 <!-- <a href="#" class="btn_3">Agregar al Carro</a> <a href="checkout.php" class="btn_3">Comprar ahora</a>-->
+                 <input type="submit" name="add_to_cart" style="align=right " class="btn_3" value="Agregar al Carro"/>
               </div>
+                <input type="hidden" name="hidden_name" value="<?php echo $pro_name; ?>"/>
+                <input type="hidden" name="hidden_price" value="<?php echo $pro_price; ?>"/>
 <!--
               <div class="checkout">
                   <a href="checkout.php" class="btn_3">Comprar ahora</a>
@@ -68,7 +134,9 @@
 -->
             </div>
           </div>
-        </div>
+        </form>
+       </div>
+            
       </div>
     </div>
   </div>

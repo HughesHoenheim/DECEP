@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php 
         
-        include("../commons/assets/includes/header.php");
+        include("assets/includes/header.php");
        
 
 ?>
@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     if( (!empty($_POST['email'])) && (!empty($_POST['password'])) ) 
 		{ //conectarme a ver si existe usuario    
-			if(include_once('../commons/assets/includes/connectiondb.php')) // Conectarse al servidor SQL
+			if(include_once('../../commons/assets/includes/connectiondb.php')) // Conectarse al servidor SQL
 	   		{
                 $email = $_POST['email'];
                 $password = $_POST['password'];
@@ -41,7 +41,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
                        // header('Location: index.php');
                         
-                      echo "<meta http-equiv=\"refresh\" content=\"0;url=student/index.php\">"  ;
+                      echo "<meta http-equiv=\"refresh\" content=\"0;url=index.php\">"  ;
                      exit();
                     }
                     else{
@@ -88,7 +88,7 @@ else // No llegó por un submit, por lo tanto hay que presentar el formulario
     <!-- slider Area Start-->
     <div class="slider-area ">
         <!-- Mobile Menu -->
-        <div class="single-slider slider-height2 d-flex align-items-center" data-background="../DECEP/DECEP_IMG/loginbanner.jpg">
+        <div class="single-slider slider-height2 d-flex align-items-center" data-background="../../commons/DECEP_IMG/loginbanner.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -156,7 +156,7 @@ else // No llegó por un submit, por lo tanto hay que presentar el formulario
 
 <?php 
         
-    include('../commons/assets/includes/footer.html');
+    include('assets/includes/footer.html');
 
 ?>
     </html>

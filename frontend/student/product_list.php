@@ -1,13 +1,13 @@
 <?php 
         
-        include('../commons/assets/includes/header.php');
+        include('assets/includes/header.php');
 
 ?>
 
     <!-- slider Area Start-->
     <div class="slider-area ">
         <!-- Mobile Menu -->
-        <div class="single-slider slider-height2 d-flex align-items-center" data-background="../DECEP/DECEP_IMG/cursosbanner3.jpg">
+        <div class="single-slider slider-height2 d-flex align-items-center" data-background="../../commons/decep_images/cursosbanner3.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -63,7 +63,7 @@
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
                                    <a href="single-product.php">
-                                    <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/compuaplicaciones/excel8.jpg" alt="" class="img-fluid"></a>
+                                    <img src="../commons/decep_images/cursos/excel8.jpg" alt="" class="img-fluid"></a>
                                     <h3> <a href="single-product.html">Microsoft Excel B&aacute;sico</a> </h3>
                                     <p>    $175 | (3) Cr&eacute;ditos </p>
                                 </div>
@@ -71,21 +71,21 @@
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
                                    <a href="single-product.php">
-                                       <img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/destrezastecyprof/grooming-prices4.jpg" alt="" class="img-fluid"></a>
+                                       <img src="../commons/decep_images/cursos/grooming-prices1.jpg" alt="" class="img-fluid"></a>
                                     <h3> <a href="single-product.html">Grooming</a> </h3>
                                     <p>$175.00 | (3) Cr&eacute;ditos</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <a href="single-product.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/fotografia2.jpg" alt="" class="img-fluid"></a>
+                                    <a href="single-product.php"><img src="../commons/decep_images/cursos/fotografia2.jpg" alt="" class="img-fluid"></a>
                                     <h3> <a href="single-product.html">Fotograf&iacute;a</a> </h3>
                                     <p>$175.00 | (3) Cr&eacute;ditos</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
-                                    <a href="single-product.php"><img src="../DECEP/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/lenguajedesenas.jpg" alt="" class="img-fluid"></a>
+                                    <a href="single-product.php"><img src="../commons/decep_images/cursos/lenguajedese%C3%B1as1.jpg" alt="" class="img-fluid"></a>
                                     <h3> <a href="single-product.html">Lenguaje de Senas</a> </h3>
                                     <p>$175.00 | (3) Cr&eacute;ditos</p>
                                 </div>
@@ -250,6 +250,6 @@
     
                                <?php 
         
-        include('../commons/assets/includes/footer.html');
+        include('assets/includes/footer.html');
 
 ?>

@@ -1,8 +1,7 @@
 <?php 
         
-        include('../commons/includes/header.html');
-        include('../commons/includes/functions.php');
-
+        include('../commons/assets/includes/header.php');
+      
 ?>
 
     <main>
@@ -10,7 +9,7 @@
         <!-- slider Area Start-->
         <div class="slider-area ">
             <!-- Mobile Menu -->
-            <div class="single-slider slider-height2 d-flex align-items-center" data-background="../commons/decep_images/productcat.jpg">
+            <div class="single-slider slider-height2 d-flex align-items-center" data-background="../../DECEP/commons/DECEP_IMG/productcat.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -72,7 +71,6 @@
                             
 
                                 <?php getCourse(); ?>
-                                <?php searchCourse(); ?>
                                 <?php getCourseCat(); ?>
 <!--
                             <div class="col-xl-4 col-lg-4 col-md-6">
@@ -960,6 +958,6 @@
     </main>
                             <?php 
         
-        include('assets/includes/footer.html');
+        include('../commons/assets/includes/footer.html');
 
 ?>

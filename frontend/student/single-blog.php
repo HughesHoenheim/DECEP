@@ -1,7 +1,6 @@
 <?php 
         
-            include('../commons/assets/includes/header.php');
-
+    include('assets/includes/header.php');
 
 ?>
 
@@ -434,6 +433,6 @@
 
                   <?php 
         
-    include('../commons/assets/includes/footer.html');
+    include('assets/includes/footer.html');
 
 ?>

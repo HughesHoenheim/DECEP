@@ -1,7 +1,9 @@
 <?php 
         
-        include('../commons/assets/includes/header.php');
+        include('assets/includes/header.php');
         
+        
+
 ?>
 
     <main>
@@ -10,14 +12,14 @@
         <div class="slider-area ">
             <!-- Mobile Menu -->
             <div class="slider-active">
-                    <div class="single-slider slider-height" data-background="../../DECEP/commons/DECEP_IMG/image.jpg">
+                    <div class="single-slider slider-height" data-background="../../commons/DECEP_IMG/image.jpg">
 <!--                <div class="single-slider slider-height" data-background="assets/img/hero/h1_hero.jpg">-->
                     <div class="container">
                         <div class="row d-flex align-items-center justify-content-between">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
                                 <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
 <!--                                    <img src="assets/img/hero/hero_man.png" alt="">-->
-                                        <img src="../../DECEP/commons/DECEP_IMG/lobo-grande2.png" alt="" >
+                                        <img src="../../commons/DECEP_IMG/lobo-grande2.png" alt="" >
                                 </div>
                             </div>
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
@@ -34,12 +36,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="single-slider slider-height" data-background="../../DECEP/commons/assets/img/hero/h1_hero.jpg">
+                <div class="single-slider slider-height" data-background="../../commons/assets/img/hero/h1_hero.jpg">
                     <div class="container">
                         <div class="row d-flex align-items-center justify-content-between">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
                                 <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
-                                    <img src="../../DECEP/commons/assets/img/hero/hero_man.png" alt="">
+                                    <img src="../../assets/img/hero/hero_man.png" alt="">
                                 </div>
                             </div>
                            
@@ -108,7 +110,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="single-category mb-30">
                             <div class="category-img">
-                                <img src="../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/empresarismo1.jpg" alt="" width="370" height="320">
+                                <img src="../../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/empresarismo1.jpg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Todas</h2>-->
                                     <span class="best"><a href="cursos.php">Todas las Categor&iacute;as</a></span>
@@ -120,7 +122,7 @@
                      <div class="col-xl-4 col-lg-6">
                         <div class="single-category mb-30">
                             <div class="category-img text-center">
-                                <img src="../commons/DECEP_IMG/Cursos_IMG/certiocupacionales/._contrucgabinete.png" alt="" width="370" height="320">
+                                <img src="../../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/facturacionMED1.jpg" alt="" width="370" height="320">
                                 <div class="category-caption">
                                 <span class="best"><a href="product_list.php">Cursos Cortos</a></span>
 
@@ -136,7 +138,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="single-category mb-30">
                             <div class="category-img">
-                                <img src="../../DECEP/commons/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/gerenciasuper1.jpeg" alt="" width="370" height="320">
+                                <img src="../DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/gerenciasuper1.jpeg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Man`s Cloth</h2>-->
                                     <span class="best"><a href="product_list.php">Certificaciones Profecionales</a></span>
@@ -676,7 +678,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="../commons/assets/img/categori/product1.png" alt="">
+                                        <img src="assets/img/categori/product1.png" alt="">
                                         <div class="new-product">
                                             <span>New</span>
                                         </div>
@@ -702,7 +704,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="../commons/assets/img/categori/product2.png" alt="">
+                                        <img src="assets/img/categori/product2.png" alt="">
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -725,7 +727,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="../commons/assets/img/categori/product3.png" alt="">
+                                        <img src="assets/img/categori/product3.png" alt="">
                                         <div class="new-product">
                                             <span>New</span>
                                         </div>
@@ -751,7 +753,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="../commons/assets/img/categori/product4.png" alt="">
+                                        <img src="assets/img/categori/product4.png" alt="">
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -774,7 +776,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="single-product mb-60">
                                     <div class="product-img">
-                                        <img src="../commons/assets/img/categori/product5.png" alt="">
+                                        <img src="assets/img/categori/product5.png" alt="">
                                     </div>
                                     <div class="product-caption">
                                         <div class="product-ratting">
@@ -829,11 +831,11 @@
         <!-- Latest Products End -->
         <!-- Best Product Start -->
         <div class="best-product-area lf-padding" >
-           <div class="product-wrapper bg-height" style="background-image: url('../commons/DECEP_IMG/unnamed.jpg')">
+           <div class="product-wrapper bg-height" style="background-image: url('../../commons/DECEP_IMG/unnamed.jpg')">
                 <div class="container position-relative">
                     <div class="row justify-content-between align-items-end">
                         <div class="product-man position-absolute  d-none d-lg-block">
-                            <img src="../commons/DECEP_IMG/estudiante.png" alt="" width="300" height="620">
+                            <img src="../../commons/DECEP_IMG/estudiante.png" alt="" width="300" height="620">
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-2 d-none d-lg-block">
                             <div class="vertical-text">
@@ -852,7 +854,7 @@
            </div>
            <!-- Shape -->
            <div class="shape bounce-animate d-none d-md-block">
-               <img src="../commons/DECEP_IMG/diploma.png" alt="" width="150" height="150">
+               <img src="../../commons/DECEP_IMG/diploma.png" alt="" width="150" height="150">
            </div>
         </div>
         <!-- Best Product End-->
@@ -1067,7 +1069,7 @@
     </main>
                <?php 
         
-        include('../commons/assets/includes/footer.html');
+        include('assets/includes/footer.html');
 
 ?>
                

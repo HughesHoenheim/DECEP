@@ -1,7 +1,7 @@
 <?php 
         
-        include('../commons/assets/includes/header.php');
-        
+        include('assets/includes/header.php');
+       
 
 if(isset($_POST["add_to_cart"]))
 {
@@ -98,7 +98,7 @@ if(isset($_POST["add_to_cart"]))
             
           <div class="product_img_slide owl-carousel">
             <div class="single_product_img">
-              <img src="../commons/decep_images/cursos/<?php echo $row_cour['image'] ?>" alt="#" class="img-fluid">
+              <img src="../../commons/decep_images/cursos/<?php echo $row_cour['image'] ?>" alt="#" class="img-fluid">
             </div>
          
             
@@ -164,6 +164,6 @@ if(isset($_POST["add_to_cart"]))
 
                  <?php 
         
-        include('../commons/assets/includes/footer.html');
+        include('assets/includes/footer.html');
 
 ?>

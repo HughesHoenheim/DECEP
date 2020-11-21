@@ -1,6 +1,6 @@
 <?php 
         
-    include('assets/includes/header.html');
+    include('../commons/assets/includes/header.php');
 
 ?>
 
@@ -1020,6 +1020,6 @@
                </div>
                             <?php 
         
-        include('assets/includes/footer.html');
+        include('../commons/assets/includes/footer.html');
 
 ?>

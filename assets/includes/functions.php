@@ -192,5 +192,52 @@ function getCourse(){
 }
 
 
+function searchCourse(){
+     
+        if(isset($_GET['search'])){
+            
+                global $dbc;
+                            
+            $search_query = $_GET['user_query'];
+                            
+            $get_course = "select * from course where keywords like '%$search_query%'";
+        
+            $run_course = mysqli_query($dbc, $get_course);
+
+            while ($row_search_course=mysqli_fetch_array($run_course)){
+
+                $cour_id       =  $row_search_course['course_id'];
+                $cour_name     =  $row_search_course['course_name'];
+                $cour_cat      =  $row_search_course['category_id'];
+                $cour_subcat   =  $row_search_course['subcategory_id'];
+                $cour_image    =  $row_search_course['image'];
+                $cour_desc     =  $row_search_course['description'];
+                $cour_keys     =  $row_search_course['keywords'];
+                $cour_price    =  $row_search_course['price'];
+                $cour_status   =  $row_search_course['status'];
+
+                if($cour_status == 'active')
+                {
+                      echo "<div class='col-xl-4 col-lg-4 col-md-6'>
+                                <div class='single-product mb-60'>
+                                    <div class='product-img'>
+                                        <a href='course.php'> <img  src='decep_images/cursos/$cour_image' alt='' width='500' height='350'></a>
+                                        <div class='new-product'>
+                                        </div>
+                                    </div>
+                                    <div class='product-caption'>
+                                        <h4><a href=''>$cour_name</a></h4>
+                                        <div class='price'>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>";
+                }
+                }
+            }
+
+}
+
+
 
 ?>

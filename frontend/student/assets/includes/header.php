@@ -120,7 +120,7 @@
                                                 </ul>
                                             </li>
                                             <li><a href="">Matr&iacute;cula</a></li>
-                                            <li><a href="login.php">Mi Cuenta </a></li>
+                                            
                                             <li><a href="checkout.php">Checkout</a></li>
 <!--
                                             <li><a href="blog.html">Blog</a>
@@ -142,6 +142,14 @@
                                             </li>
 -->
                                             <li><a href="contact.php">Contact</a></li>
+                                            
+                                           <li><a href="#"> Hi,&nbsp;<?php echo $_SESSION['user_name']."!"; ?></a>
+                                                <ul class="submenu">
+                                                     <li><a href="user_account.php">Mi Cuenta </a>
+                                                     <a href="logout.php"> Log Out</a></li>
+                                                     
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -168,6 +176,8 @@
                                             <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
                                         </div>
                                     </li>
+                                    
+<!--
                                    <li class="d-none d-lg-block"> <a href="login.php" class="btn header-btn">Hi,<?php echo $_SESSION['user_name']."!"; ?></a>
                                     
                                      <ul class="submenu">
@@ -177,6 +187,7 @@
                                                 </ul>
                                     
                                     </li>
+-->
                                 </ul>
                             </div>
                             <!-- Mobile Menu -->

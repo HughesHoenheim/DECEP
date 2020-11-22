@@ -115,7 +115,7 @@
                                                 </ul>
                                             </li>
                                             <li><a href="">Matr&iacute;cula</a></li>
-                                            <li><a href="login.php">Mi Cuenta </a></li>
+                                            
                                             <li><a href="checkout.php">Checkout</a></li>
 <!--
                                             <li><a href="blog.html">Blog</a>

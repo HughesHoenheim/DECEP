@@ -55,7 +55,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                         
                         $_SESSION['admin_name'] = $row2['firstname'];
                         $_SESSION['admin_id'] = $row2['admin_id'];
-                        header('Location: admin/index.php');
+                        //header('Location: admin/index.php');
+                         echo "<meta http-equiv=\"refresh\" content=\"0;url=../backend/admin/index.html\">";
                         exit();
                     }
                 }

@@ -22,38 +22,6 @@
     </div>
     <!-- slider Area End-->
     
-   <style>
-    /* Search Bar */
-
-.search-form input {
-  background: transparent;
-  border: 0px;
-  border-bottom: 1px solid #fff;
-  color: dimgray;
-  height: 50px;
-  width: 240px;
-}
-
-.search-form input:hover, .search-form input:focus {
-  border-bottom: 1px solid #ED8A53;
-  outline: 0px;
-}
-
-.search-btn {
-  background: #ED8A53;
-  border: 0px;
-  border-bottom: 1px solid #fff;
-  color: #000000;
-  height: 49px;
-  margin: 0 0 0 10px;
-  padding: 0 10px;
-}
-.search-btn:hover{
-  background-color: #FFAA6F;
-  color: white;}
-
-    /*Fin del Search Bar */
-    </style>
     
     <style>
 .dropbtn {

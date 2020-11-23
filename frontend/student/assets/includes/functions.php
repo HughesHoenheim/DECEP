@@ -131,22 +131,22 @@ function getCourse(){
         
             switch($orden)
             {
-            case 'a': $order_by = 'prod_name ASC LIMIT 0,9';
+            case 'a': $order_by = 'prod_name ASC LIMIT 0,54';
                 break;
                 
-            case 'z': $order_by = 'prod_name DESC LIMIT 0,9';
+            case 'z': $order_by = 'prod_name DESC LIMIT 0,54';
                 break;
                 
-            case 'h': $order_by = 'price DESC LIMIT 0,9';
+            case 'h': $order_by = 'price DESC LIMIT 0,54';
                 break;
                 
-            case 'l': $order_by = 'price ASC LIMIT 0,9';
+            case 'l': $order_by = 'price ASC LIMIT 0,54';
                 break;
 
-            case 'r': $order_by = 'RAND() LIMIT 0,9';
+            case 'r': $order_by = 'RAND() LIMIT 0,54';
                 break;
                 
-            default: $order_by = 'RAND() LIMIT 0,9';
+            default: $order_by = 'RAND() LIMIT 0,54';
             }
             
 

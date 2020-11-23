@@ -44,8 +44,7 @@
                     <h1 style="font-family: serif" style="text-align: inherit">My Account </h1>
                     <?php $customer_id = $_SESSION['user_id']; ?>
                     <?php 
-                    echo "<a href=\"./billing.php?user_id=$customer_id\" class=\"btn header-btn\" style=\"background-color:#FBC20E\">
-                    Edit Billin</a> <a href=\"./edit_account.php?user_id=$customer_id\" class=\"btn header-btn\" style=\"background-color:#FBC20E\">
+                    echo "<a href=\"./edit_account.php?user_id=$customer_id\" class=\"btn header-btn\" style=\"background-color:#FBC20E\">
                     Edit Account Info</a> <a href=\"./edit_account.php?user_id=$customer_id\" class=\"btn header-btn\" style=\"background-color: #FBC20E\">View My Orders</a>"
                     ?>
                         <div id="user_info">

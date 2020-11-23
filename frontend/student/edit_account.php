@@ -44,7 +44,7 @@ if(isset($_GET['user_id']))
             <div class="row">
                 <div class="col-lg-7 offset-lg-2">
                 <?php $customer_id = $_SESSION['user_id']; ?>
-                    <h1 style="font-family: serif" style="text-align: inherit">Edit Acount</h1>
+                    <h1 style="font-family: serif" style="text-align: inherit">Edit Account</h1>
                     <form action="edit_account.php" method ="post" class="row contact_form" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col-lg-6">
@@ -62,8 +62,8 @@ if(isset($_GET['user_id']))
                                 <input type="text" name ="phone" value="<?php echo $row['phone'];?>" id="phone" required>
                             </div>
                             <div class="col-lg-6">
-                            <label for="myFile">Profile Picture<span>*</span></label>
-                                <?php echo "<img width=\"100\" height=\"100\" style=\"border-radius: 50%\"
+                            <label for="myFile"><br>&nbsp;&nbsp;&nbsp;&nbsp;Profile Picture<span>*</span></label>
+                                <?php echo "<img width=\"300\" height=\"170\" style=\"border-radius: 50%\"
                                             src=\"../../commons/user_images/$user_img\">"; ?>
                                 <input type="file" name="profileimg" id="myFile">
 <!--                            <input type="file" name ="profileimg" value="<-?php echo $row['cust_img'];?>" id="myFile" required>-->
@@ -80,6 +80,7 @@ if(isset($_GET['user_id']))
                                 </div>
 -->
                                 <div class="order-btn">
+                                    <br>
                                     <button  type="submit" name="save_changes" class="btn header-btn" >Save Changes</button>
                                     <input type="hidden" name="user_id" value="<?php echo $_GET['user_id']; ?>" />
                                 </div>

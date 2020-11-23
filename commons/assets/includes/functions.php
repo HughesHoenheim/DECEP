@@ -239,5 +239,116 @@ function searchCourse(){
 }
 
 
+function getInsCourse(){
+    
+//    if(!isset($_GET['search'])){
+    if(!isset($_GET['cat_id'])){
+//        if(!isset($_GET['type_id'])){
+            
+            global $dbc;
+    
+            //Determinar columna para ordenar.
+            if(isset($_GET['order']))
+            $orden=$_GET['order'];
+            else
+            $orden = 'r';
+        
+            switch($orden)
+            {
+            case 'a': $order_by = 'prod_name ASC LIMIT 0,9';
+                break;
+                
+            case 'z': $order_by = 'prod_name DESC LIMIT 0,9';
+                break;
+                
+            case 'h': $order_by = 'price DESC LIMIT 0,9';
+                break;
+                
+            case 'l': $order_by = 'price ASC LIMIT 0,9';
+                break;
+
+            case 'r': $order_by = 'RAND() LIMIT 0,9';
+                break;
+                
+            default: $order_by = 'RAND() LIMIT 0,9';
+            }
+            
+
+            $get_course = "SELECT * 
+FROM (instructor NATURAL JOIN teaches) LEFT OUTER JOIN course USING (course_id)";
+        
+            $run_course = mysqli_query($dbc, $get_course);
+        
+            while ($row_cat_course=mysqli_fetch_array($run_course)){
+        
+            $cour_id       =  $row_cat_course['course_id'];
+            $cour_name     =  $row_cat_course['course_name'];
+            $cour_cat      =  $row_cat_course['category_id'];
+            $cour_subcat   =  $row_cat_course['subcategory_id'];
+            $cour_image    =  $row_cat_course['image'];
+            $cour_desc     =  $row_cat_course['description'];
+            $cour_keys     =  $row_cat_course['keywords'];
+            $cour_price    =  $row_cat_course['price'];
+            $cour_status   =  $row_cat_course['status'];
+            $section_id    =  $row_cat_course['section_id'];
+            $semester      =  $row_cat_course['semester'];
+            $year          =  $row_cat_course['year'];
+            
+                    if($cour_status == 'active')
+                {
+                         $get_section = "SELECT * 
+FROM section where section_id = $section_id";
+            $run_section = mysqli_query($dbc, $get_section);
+            while ($row_cat_course=mysqli_fetch_array($run_section)){
+        
+            $capacity      =  $row_cat_course['capacity'];
+            $room     =  $row_cat_course['room'];
+        
+           
+                        
+                      echo "<tr>
+                <td>
+                  <div class='media'>
+                    <div class='d-flex'>
+                      <img src='../../commons/decep_images/cursos/$cour_image' width='100' height='80' alt='' />
+                        &nbsp;$cour_name
+                    </div>
+                      
+                    
+                  </div>
+                </td>
+                <td>
+                  <h5>$section_id</h5>
+                </td>
+                <td>
+                  <h5>$semester</h5>
+                </td>
+                <td>
+                 <h5>$year</h5>
+                </td>
+                <td>
+                 <h5>$capacity</h5>
+                </td>
+                <td>
+                 <h5>$room</h5>
+                </td>
+               
+                     
+              </tr>";
+                    }
+                }
+                }
+//            }
+    
+        }
+
+//    }
+}
+    
+    
+    
+    
+    
+    
 
 ?>

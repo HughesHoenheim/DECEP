@@ -20,45 +20,7 @@
             </div>
         </div>
     </div>
-    <!-- slider Area End-->
     
-    
-    <style>
-.dropbtn {
-  background-color: #ED8A53;
-  color: white;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-/*  position: relative;*/
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #000000;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #FFAA6F;}
-</style>
         
         
     
@@ -216,7 +178,7 @@ else // No llegó por un submit, por lo tanto hay que presentar el formulario
               
               
               <div class="col-md-6 form-group p_star">
-                <label for="phone" style="color: black">Phone*   </label>
+                <label for="phone" style="color: black">Phone *   </label>
                 <input type="phone" id="phone" name="phone">
               </div>
               
@@ -266,7 +228,8 @@ else // No llegó por un submit, por lo tanto hay que presentar el formulario
                   placeholder="Order Notes"></textarea>
 -->
               </div>
-              <button type="submit" name="submit">CREATE ACCOUNT</button>
+              
+              <button class="btn header-btn" type="submit" name="submit" style="align: center">CREATE ACCOUNT</button>
             </form>
           </div>
 <!--            <a class="btn_3" href="#">Crear Cuenta</a>-->

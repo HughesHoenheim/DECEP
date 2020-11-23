@@ -114,10 +114,12 @@
                                         <ul id="navigation">                                                                                                                                     
                                             <li><a href="index.php">Inicio</a></li>
                                             <li><a href="course.php">Cursos</a>
+<!--
                                                 <ul class="submenu">
                                                     <li><a href="product_list.php"> Lista de Cursos</a></li>
                                                    
                                                 </ul>
+-->
                                             </li>
                                             <li><a href="">Matr&iacute;cula</a></li>
                                             

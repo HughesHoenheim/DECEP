@@ -107,16 +107,17 @@
                                 <!-- Main-menu -->
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>                                                
-                                        <ul id="navigation">                                                                                                                                     
+                                        <ul id="navigation">
                                             <li><a href="index.php">Inicio</a></li>
                                             <li><a href="course.php">Cursos</a>
+<!--
                                                 <ul class="submenu">
                                                     <li><a href="product_list.php"> Lista de Cursos</a></li>
                                                    
                                                 </ul>
+-->
                                             </li>
                                             <li><a href="">Matr&iacute;cula</a></li>
-                                            
                                             <li><a href="checkout.php">Checkout</a></li>
 <!--
                                             <li><a href="blog.html">Blog</a>

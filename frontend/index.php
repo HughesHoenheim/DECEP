@@ -2,7 +2,6 @@
         
         include('../commons/assets/includes/header.php');
 
-        
 ?>
 
     <main>
@@ -28,7 +27,7 @@
                                     <p data-animation="fadeInRight" data-delay=".8s">Divisi&oacute;n de Educaci&oacute;n Continua y <br>Estudios Profecionales</p>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInRight" data-delay="1s">
-                                        <a href="cursos.php" class="btn hero-btn">Ver Cursos</a>
+                                        <a href="course.php" class="btn hero-btn">Ver Cursos</a>
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +66,7 @@
                             <div class="client_img">
                             </div>
                             <h2>Nuevo curso de diseño gr&aacute;fico</h2>
-                            <p>Aprovecha esta oportunidad &uacute;nica y matric&uacute;late en este curso que se estara dando por tiempo limitado, conviertete en un profecional en las artes gr&aacute;ficas en poco tiempo. Presione <a href="index.php" style="color:#FBC20E;">aqu&iacute;</a> para matricularte.</p>
+                            <p>Aprovecha esta oportunidad &uacute;nica y matric&uacute;late en este curso que se estara dando por tiempo limitado, conviertete en un profecional en las artes gr&aacute;ficas en poco tiempo. Presione <a href="register.php" style="color:#FBC20E;">aqu&iacute;</a> para matricularte.</p>
                             <h5>DECEP-UPRA</h5>
                         </div>
                         <div class="single_client_review">
@@ -112,7 +111,7 @@
                                 <img src="../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/empresarismo1.jpg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Todas</h2>-->
-                                    <span class="best"><a href="cursos.php">Todas las Categor&iacute;as</a></span>
+                                    <span class="best"><a href="course.php">Todas las Categor&iacute;as</a></span>
 <!--                                    <span class="collection">New Collection</span>-->
                                 </div>
                             </div>
@@ -123,7 +122,7 @@
                             <div class="category-img text-center">
                                 <img src="../commons/DECEP_IMG/Cursos_IMG/certiocupacionales/contrucgabinete.png" alt="" width="370" height="320">
                                 <div class="category-caption">
-                                <span class="best"><a href="product_list.php">Cursos Cortos</a></span>
+                                <span class="best"><a href="course.php">Cursos Cortos</a></span>
 
 <!--                                    <span class="collection">Discount!</span>-->
 <!--
@@ -140,7 +139,7 @@
                                 <img src="../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/gerenciasuper1.jpeg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Man`s Cloth</h2>-->
-                                    <span class="best"><a href="product_list.php">Certificaciones Profecionales</a></span>
+                                    <span class="best"><a href="course.php">Certificaciones Profecionales</a></span>
 <!--                                    <span class="collection">New Collection</span>-->
                                 </div>
                             </div>
@@ -845,7 +844,7 @@
                             <div class="best-product-caption">
                                 <h2>Encuentra el curso que deseas<br></h2>
                                 <p>Convi&eacute;rtete en un profecional.</p>
-                                <a href="product_list.php" class="black-btn">Matricúlate!</a>
+                                <a href="register.php" class="black-btn">Matricúlate!</a>
                             </div>
                         </div>
                     </div>

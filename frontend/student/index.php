@@ -113,7 +113,7 @@
                                 <img src="../../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/empresarismo1.jpg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Todas</h2>-->
-                                    <span class="best"><a href="cursos.php">Todas las Categor&iacute;as</a></span>
+                                    <span class="best"><a href="course.php">Todas las Categor&iacute;as</a></span>
 <!--                                    <span class="collection">New Collection</span>-->
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                             <div class="category-img text-center">
                                 <img src="../../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/facturacionMED1.jpg" alt="" width="370" height="320">
                                 <div class="category-caption">
-                                <span class="best"><a href="product_list.php">Cursos Cortos</a></span>
+                                <span class="best"><a href="course.php">Cursos Cortos</a></span>
 
 <!--                                    <span class="collection">Discount!</span>-->
 <!--
@@ -138,10 +138,10 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="single-category mb-30">
                             <div class="category-img">
-                                <img src="../DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/gerenciasuper1.jpeg" alt="" width="370" height="320">
+                                <img src="../../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/gerenciasuper1.jpeg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Man`s Cloth</h2>-->
-                                    <span class="best"><a href="product_list.php">Certificaciones Profecionales</a></span>
+                                    <span class="best"><a href="course.php">Certificaciones Profecionales</a></span>
 <!--                                    <span class="collection">New Collection</span>-->
                                 </div>
                             </div>

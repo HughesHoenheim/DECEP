@@ -77,7 +77,7 @@
                 <td>
                   <div class="media">
                     <div class="d-flex">
-                      <img src="../../../DECEP/decep_images/cursos/<?php echo $cour_image; ?>" alt="" />
+                      <img src="../../../DECEP/commons/decep_images/cursos/<?php echo $cour_image; ?>" alt="" />
                         <?php } ?>
                     </div>
                       

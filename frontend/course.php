@@ -1,6 +1,7 @@
 <?php 
         
         include('../commons/assets/includes/header.php');
+
       
 ?>
 
@@ -71,6 +72,7 @@
                             
 
                                 <?php getCourse(); ?>
+                                <?php searchCourse(); ?>
                                 <?php getCourseCat(); ?>
 <!--
                             <div class="col-xl-4 col-lg-4 col-md-6">

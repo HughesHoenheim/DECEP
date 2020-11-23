@@ -221,7 +221,7 @@ function searchCourse(){
                       echo "<div class='col-xl-4 col-lg-4 col-md-6'>
                                 <div class='single-product mb-60'>
                                     <div class='product-img'>
-                                        <a href='course.php'> <img  src='decep_images/cursos/$cour_image' alt='' width='500' height='350'></a>
+                                        <a href='course.php'> <img  src='../commons/decep_images/cursos/$cour_image' alt='' width='500' height='350'></a>
                                         <div class='new-product'>
                                         </div>
                                     </div>

@@ -1,6 +1,7 @@
 <?php 
         
         include('../commons/assets/includes/header.php');
+
         
 ?>
 
@@ -120,7 +121,7 @@
                      <div class="col-xl-4 col-lg-6">
                         <div class="single-category mb-30">
                             <div class="category-img text-center">
-                                <img src="../commons/DECEP_IMG/Cursos_IMG/certiocupacionales/._contrucgabinete.png" alt="" width="370" height="320">
+                                <img src="../commons/DECEP_IMG/Cursos_IMG/certiocupacionales/contrucgabinete.png" alt="" width="370" height="320">
                                 <div class="category-caption">
                                 <span class="best"><a href="product_list.php">Cursos Cortos</a></span>
 
@@ -136,7 +137,7 @@
                     <div class="col-xl-4 col-lg-6">
                         <div class="single-category mb-30">
                             <div class="category-img">
-                                <img src="../../DECEP/commons/DECEP_IMG/Cursos_IMG/general_IMG/certificacionesprof/gerenciasuper1.jpeg" alt="" width="370" height="320">
+                                <img src="../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/gerenciasuper1.jpeg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Man`s Cloth</h2>-->
                                     <span class="best"><a href="product_list.php">Certificaciones Profecionales</a></span>

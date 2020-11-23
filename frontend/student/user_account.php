@@ -5,6 +5,16 @@
         
 
 ?>
+<style>
+#user_info{
+  font-size: 20px;
+/*  float: left;*/
+  margin-bottom: 50px;
+}
+
+</style>
+
+
 
     <main>
 
@@ -27,31 +37,31 @@
         ?>
 
     <div class="register-login-section spad">
-
-        <div class="container">
+        <br>
+        <div class="container" style="background: white">
             <div class="row">
-
-
-                <div class="col-lg-5 offset-lg-1">
-                    <h2 style="font-family: serif" style="text-align: center">My Account</h2><br>
-                    
-
-                    <div id="info">
-                        <?php 
+                <div class="col-lg-7 offset-lg-2">
+                    <h1 style="font-family: serif" style="text-align: inherit">My Account </h1>
+                    <?php $customer_id = $_SESSION['user_id']; ?>
+                    <?php 
+                    echo "<a href=\"./billing.php?user_id=$customer_id\" class=\"btn header-btn\" style=\"background-color:#FBC20E\">
+                    Edit Billin</a> <a href=\"./edit_account.php?user_id=$customer_id\" class=\"btn header-btn\" style=\"background-color:#FBC20E\">
+                    Edit Account Info</a> <a href=\"./edit_account.php?user_id=$customer_id\" class=\"btn header-btn\" style=\"background-color: #FBC20E\">View My Orders</a>"
+                    ?>
+                        <div id="user_info">
+                        <img align="right" src="../../commons/user_images/<?php echo $image; ?>">
+                            <?php 
                             echo "Name: $firstname  $lastname<br>";
                             echo "Email: $email<br>";
-                            echo "Phone: $phone<br>";
-                        ?>
-
-                        
-                        
-                    
-                    
-                    </div>                           
+                            echo "Phone: $phone";
+                            ?>
+                        </div>
             </div>
+                
         </div>
         </div>         
-                    </div>
+</div>
+        
     </main>
 <?php 
         

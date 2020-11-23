@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php  include("../commons/assets/includes/connectiondb.php");
-        include("../commons/assets/includes/functions.php");
+       include("../commons/assets/includes/functions.php");
+
         session_start(); ?>
 
 <html class="no-js" lang="zxx">
@@ -145,11 +146,19 @@
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                                     <li class="d-none d-xl-block">
                                         <div class="form-box f-right ">
-                                            <input type="text" name="Search" placeholder="Búsqueda">
+                                            <input type="text" name="user_query" placeholder="Búsqueda">
                                             <div class="search-icon">
-                                                <i class="fas fa-search special-tag"></i>
+                                            <button type="submit" name="search" value="Search"><i class="fas fa-search special-tag"></i></button>
                                             </div>
                                         </div>
+                                        
+<!--
+                                        <form class="search-form" method="get" action="results.php" enctype="multipart/form-data">
+                                <input type="text" name="user_query" placeholder="Search Doughnuts">
+                                <button type="submit" name="search" value="Search" class="search-btn">Search</button>
+                              </form>
+-->
+                                        
                                      </li>
 <!--
                                     <li class=" d-none d-xl-block">

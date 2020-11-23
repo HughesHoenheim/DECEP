@@ -7,7 +7,7 @@
     <!-- slider Area Start-->
     <div class="slider-area ">
         <!-- Mobile Menu -->
-        <div class="single-slider slider-height2 d-flex align-items-center" data-background="../DECEP/DECEP_IMG/contactbanner2.jpg">
+        <div class="single-slider slider-height2 d-flex align-items-center" data-background="../../DECEP/commons/DECEP_IMG/contactbanner2.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">

@@ -26,7 +26,17 @@
 	<!-- Main CSS-->
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Bootstrap CSS (Extra, Added)-->
-	<!-- <link rel="stylesheet" href="../../commons/assets/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="../../commons/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../commons/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../commons/assets/css/flaticon.css">
+    <link rel="stylesheet" href="../../commons/assets/css/slicknav.css">
+    <link rel="stylesheet" href="../../commons/assets/css/animate.min.css">
+    <link rel="stylesheet" href="../../commons/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../../commons/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../commons/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../../commons/assets/css/slick.css">
+    <link rel="stylesheet" href="../../commons/assets/css/nice-select.css">
+    <link rel="stylesheet" href="../../commons/assets/css/style.css">
 
 </head>
 
@@ -61,16 +71,40 @@
 		<div class="main-content">
 			<section id="welcome">
 				<div class="content-header">
-					<h1>Categorias</h1>
+					<h1>Cursos</h1>
 				</div>
 
-				<!-- <div class="welcome">
-					<h2 class="twenty">Welcome, Admin Pedro</h2>
+				<div class="welcome">
+					<h2 class="twenty">Mis Cursos</h2>
 
-					<p>Firstly, a huge thanks for purchasing this theme, your support is truly appreciated!</p>
+					
 
-					<p>This document covers the installation and use of this theme and often reveals answers to common problems and issues - read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document. Thank you so much!</p>
-				</div> -->
+					
+                    
+                     <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Cursos</th>
+                <th scope="col">Seccion ID</th>
+                <th scope="col">Semestre</th>
+                <th scope="col">A&ntilde;o</th>
+                <th scope="col">Capacidad</th>
+                <th scope="col">Sal&oacute;n</th>
+              </tr>
+            </thead>
+            <tbody>
+                
+                
+               
+             
+                
+             
+
+
+            
+            </tbody>
+          </table>
+				</div>
 
 
 

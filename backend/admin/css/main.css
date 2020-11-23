@@ -133,11 +133,11 @@ section p {
     color: #fff;
     display: block;
     padding: 10px 35px;
-    /* -webkit-transition: all 0.3s ease-in 0s;
+    -webkit-transition: all 0.3s ease-in 0s;
        -moz-transition: all 0.3s ease-in 0s;
         -ms-transition: all 0.3s ease-in 0s;
          -o-transition: all 0.3s ease-in 0s;
-            transition: all 0.3s ease-in 0s; */
+            transition: all 0.3s ease-in 0s;
 }
 
 .left-nav ul li a:hover, .left-nav ul li .current {
@@ -148,7 +148,7 @@ section p {
 
 #main-wrapper {
     float: left;
-    margin-left: 18%;
+    margin-left: 10%;
     width: 82%;
 }
 
@@ -223,6 +223,10 @@ section p {
     height: auto;
     margin-top: 10px;
     max-width: 100%;
+}
+.admin_container{
+    padding: 100px;
+    margin: 50px;
 }
 
 

@@ -26,7 +26,17 @@
 	<!-- Main CSS-->
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Bootstrap CSS (Extra, Added)-->
-	<!-- <link rel="stylesheet" href="../../commons/assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../../commons/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../commons/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../commons/assets/css/flaticon.css">
+    <link rel="stylesheet" href="../../commons/assets/css/slicknav.css">
+    <link rel="stylesheet" href="../../commons/assets/css/animate.min.css">
+    <link rel="stylesheet" href="../../commons/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../../commons/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../commons/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../../commons/assets/css/slick.css">
+    <link rel="stylesheet" href="../../commons/assets/css/nice-select.css">
+    <link rel="stylesheet" href="../../commons/assets/css/style.css">
 
 </head>
 
@@ -38,11 +48,6 @@
 			<center><img src="img/uprainsignia.png" alt="" width="150" height="150"><br><br></center>
         	<center><h1>Admin Menu</h1></center>
 		
-			<!--
-			<a href="#welcome">
-				<h1>Admin Area</h1>
-			</a>
-			-->
 		</div>
 		<nav class="left-nav">
 			<ul>
@@ -63,36 +68,112 @@
 				<div class="content-header">
 					<h1>Cursos</h1>
 				</div>
-
-				<!-- <div class="welcome">
-					<h2 class="twenty">Welcome, Admin Pedro</h2>
-
-					<p>Firstly, a huge thanks for purchasing this theme, your support is truly appreciated!</p>
-
-					<p>This document covers the installation and use of this theme and often reveals answers to common problems and issues - read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document. Thank you so much!</p>
-				</div> -->
-
-
-
-				<!-- <div class="features">
-					<h2 class="twenty">Template Features</h2>
-
-					<ul>
-						<li>Clean &amp; Simple Design</li>
-						<li>HTML5 &amp; CSS3</li>
-						<li>Fully Responsive Design</li>
-						<li>PHP/Ajax Powered Working Contact Form</li>
-						<li>All files are well commented</li>
-						<li>Cross Browser Compatible with IE11+, Firefox, Safari, Opera, Chrome</li>
-						<li>Extensive Documentation</li>
-					</ul>
-				</div> -->
-
-
-			</section>
-
 			
-  		</div>
+
+      <div class="welcome">	
+  		
+   <!--================Table Area =================-->
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Codigo</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Imagen</th>
+                <th scope="col">Horas</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Subcategoria</th>
+                <th scope="col">Seccion</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>               
+              <tr>
+                <td>
+                  <div class="media">                      
+                    <div class="media-body">
+                    <h5>Frances Intermedio</h5>
+                    </div>
+                  </div>
+                  <td>
+                  <div class="media">                      
+                    <div class="media-body">
+                    <h5>Frances</h5>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="media">                      
+                    <div class="media-body">
+                        <h5>Frances</h5>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="media">   
+                    <div class="d-flex">
+                      <img src="../../commons/decep_images/cursos/frances1.jpg" alt="" height="50" width="50"/>
+                    </div>                   
+                  </div>
+                </td>
+                <td>
+                  <div class="media">                      
+                    <div class="media-body">
+                    <h5>Frances</h5>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="media">                      
+                    <div class="media-body">
+                    <h5>Frances</h5>
+                    </div>
+                  </div>
+                </td>
+                <!-- <td>
+                  <div class="media">                      
+                    <div class="media-body">
+                    <h5>Italiano</h5>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="media">                      
+                    <div class="media-body">
+                    <h5>Italiano</h5>
+                    </div>
+                  </div>
+                </td> -->
+                <td>
+                  <div class="media">                      
+                    <div class="media-body">
+                    <h5>Frances</h5>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="media">                      
+                    <div class="media-body">
+                    <h5>Frances</h5>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="media">                      
+                    <div class="media-body">
+                    <h5>Frances</h5>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+      </section>
+    </div>
   </div>
 
 

@@ -26,6 +26,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                 $query2 = "SELECT * FROM admin WHERE email = '$email'  AND pass = '$password'";
                 $r2 = mysqli_query($dbc, $query2);
                 
+                $query3 = "SELECT * FROM instructor WHERE email = '$email'  AND pass = '$password'";
+                $r3 = mysqli_query($dbc, $query3);
+                
                 if ($row = mysqli_fetch_array($r))
                 {
                     if ( (strtolower($_POST['email']) == $row['email']) && ($_POST['password'] ==$row['pass']) && ($row['user_status'] == 'active') )
@@ -60,6 +63,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                         exit();
                     }
                 }
+                    else if($row3 = mysqli_fetch_array($r3))
+                {
+                    if ( (strtolower($_POST['email']) == $row3['email']) && ($_POST['password'] ==$row3['pass']) && ($row3['inst_status'] == 'active') )
+                    {//El usuario es admin.
+                        
+                        $_SESSION['instructor_name'] = $row3['firstname'];
+                        $_SESSION['instructor_id'] = $row3['inst_id'];
+                        //header('Location: admin/index.php');
+                         echo "<meta http-equiv=\"refresh\" content=\"0;url=instructor/index.php\">";
+                        exit();
+                    }
+                }
                 else 
                 { // Usuario no existe en la tabla
 
@@ -89,7 +104,7 @@ else // No llegó por un submit, por lo tanto hay que presentar el formulario
     <!-- slider Area Start-->
     <div class="slider-area ">
         <!-- Mobile Menu -->
-        <div class="single-slider slider-height2 d-flex align-items-center" data-background="../DECEP/DECEP_IMG/loginbanner.jpg">
+        <div class="single-slider slider-height2 d-flex align-items-center" data-background="../../DECEP/commons/DECEP_IMG/loginbanner.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">

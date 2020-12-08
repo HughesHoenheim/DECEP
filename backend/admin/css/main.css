@@ -110,7 +110,7 @@ section p {
     float: left;
     min-height: 100%;
     position: fixed;
-    width: 18%;
+    width: 12%;
 }
 
 .logo {
@@ -148,8 +148,8 @@ section p {
 
 #main-wrapper {
     float: left;
-    margin-left: 10%;
-    width: 82%;
+    margin-left: 7.5%;
+    width: 90%;
 }
 
 .content-header {
@@ -164,6 +164,7 @@ section p {
     font-size: 16px;
     line-height: 26px;
     margin: 35px auto 0;
+    text-align: center;
 }
 
 .features {
@@ -224,10 +225,7 @@ section p {
     margin-top: 10px;
     max-width: 100%;
 }
-.admin_container{
-    padding: 100px;
-    margin: 50px;
-}
+
 
 
 

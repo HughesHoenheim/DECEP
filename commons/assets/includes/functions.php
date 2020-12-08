@@ -344,11 +344,92 @@ FROM section where section_id = $section_id";
 
 //    }
 }
+
+function getAdminCourse(){
+             
+    global $dbc;
+
+    //Determinar columna para ordenar.
+    if(isset($_GET['order']))
+    $orden=$_GET['order'];
+    else
+    $orden = 'r';
+
+    switch($orden)
+    {
+        case 'a': $order_by = 'course_name ASC';
+            break;
+            
+        case 'z': $order_by = 'course_name DESC';
+            break;
+        
+        case 'm': $order_by = 'stock DESC';
+            break;
+        
+        case 'p': $order_by = 'stock ASC';
+            break;
+            
+        case 'h': $order_by = 'price DESC';
+            break;
+            
+        case 'l': $order_by = 'price ASC';
+            break;
+
+        case 'r': $order_by = 'course_name ASC';
+            break;
+            
+        default: $order_by = 'course_name ASC';
+    }
     
+
+    $get_course = "SELECT * FROM course ORDER BY $order_by";
+
+    $run_course = mysqli_query($dbc, $get_course);
+
+    while($row_course=mysqli_fetch_array($run_course))
+    {
+        $cour_id       =  $row_course['course_id'];
+        $cour_name     =  $row_course['course_name'];
+        $cour_image    =  $row_course['image'];
+        $cour_desc     =  $row_course['description'];
+        $cour_hours    =  $row_course['contact_hours'];
+        $cour_price    =  $row_course['price'];
+        $cour_cat      =  $row_course['category_id'];
+        $cour_subcat   =  $row_course['subcategory_id'];
+        $section_id    =  $row_course['section_id'];
+        $cour_keys     =  $row_course['keywords'];
+        $cour_status   =  $row_course['status'];
+                    
+        echo    "<tr>
+                    <td><h5>$cour_id</h5></td>
+                    <td><h5>$cour_name</h5></td>
+                    <td>
+                        <div class='media'>
+                        <div class='d-flex'>
+                            <img src='../../commons/decep_images/cursos/$cour_image' width='100' height='90' alt='' />
+                        </div>
+                        </div>
+                    </td>
+                    <td><h5>$cour_desc</h5></td>
+                    <td><h5>$cour_hours</h5></td>
+                    <td><h5>$cour_price</h5></td>
+                    <td><h5>$cour_cat</h5></td>
+                    <td><h5>$cour_subcat</h5></td>
+                    <td><h5>$section_id</h5></td>
+                    <td><h5>$cour_status</h5></td>
+                    <td>
+                        <div class='media'>
+                        <div class='d-flex'>
+                        <a href='edit_course.php?cour_id=$cour_id'>
+                            <img src='../../commons/decep_images/edit_icon.png' width='30' height='30' alt='Edit' />
+                        </a>
+                        </div>
+                        </div>
+                    </td>
+                </tr>";
+    }
+}
     
-    
-    
-    
-    
+ 
 
 ?>

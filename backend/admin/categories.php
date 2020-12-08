@@ -45,14 +45,9 @@
 	<aside class="left-sidebar">
 		<div class="logo">
 		
-			<center><img src="img/uprainsignia.png" alt="" width="150" height="150"><br><br></center>
+			<center><a href="index.php"><img src="img/uprainsignia.png" alt="UPRA logo" width="150" height="150"></a></center>
         	<center><h1>Admin Menu</h1></center>
 		
-			<!--
-			<a href="#welcome">
-				<h1>Admin Area</h1>
-			</a>
-			-->
 		</div>
 		<nav class="left-nav">
 			<ul>
@@ -62,7 +57,8 @@
 				<li><a href="news.php">Noticias</a></li>
 				<li><a href="accounts.php">Cuentas</a></li>
 				<li><a href="orders.php">Ordenes</a></li>
-				<li><a href="logout.php">Log out</a></>
+				<li><a href="#">Mi Cuenta</a></li>
+				<li><a href="logout.php">Log out</a></li>
 			</ul>
 		</nav>
 	</aside>

@@ -1,3 +1,7 @@
+<?php 
+  include("../../commons/assets/includes/connectiondb.php");
+  include("../../commons/assets/includes/functions.php"); 
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -26,17 +30,17 @@
 	<!-- Main CSS-->
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Bootstrap CSS (Extra, Added)-->
-    <link rel="stylesheet" href="../../commons/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../commons/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../../commons/assets/css/flaticon.css">
-    <link rel="stylesheet" href="../../commons/assets/css/slicknav.css">
-    <link rel="stylesheet" href="../../commons/assets/css/animate.min.css">
-    <link rel="stylesheet" href="../../commons/assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="../../commons/assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="../../commons/assets/css/themify-icons.css">
-    <link rel="stylesheet" href="../../commons/assets/css/slick.css">
-    <link rel="stylesheet" href="../../commons/assets/css/nice-select.css">
-    <link rel="stylesheet" href="../../commons/assets/css/style.css">
+  <link rel="stylesheet" href="../../commons/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../commons/assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../../commons/assets/css/flaticon.css">
+  <link rel="stylesheet" href="../../commons/assets/css/slicknav.css">
+  <link rel="stylesheet" href="../../commons/assets/css/animate.min.css">
+  <link rel="stylesheet" href="../../commons/assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="../../commons/assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../../commons/assets/css/themify-icons.css">
+  <link rel="stylesheet" href="../../commons/assets/css/slick.css">
+  <link rel="stylesheet" href="../../commons/assets/css/nice-select.css">
+  <link rel="stylesheet" href="../../commons/assets/css/style.css">
 
 </head>
 
@@ -45,19 +49,21 @@
 	<aside class="left-sidebar">
 		<div class="logo">
 		
-			<center><img src="img/uprainsignia.png" alt="" width="150" height="150"><br><br></center>
-        	<center><h1>Admin Menu</h1></center>
-		
+    <center><a href="index.php"><img src="img/uprainsignia.png" alt="UPRA logo" width="150" height="150"></a></center>
+    <center><h1>Menu</h1></center>
+
 		</div>
 		<nav class="left-nav">
 			<ul>
 				<li ><a href="index.php">Inicio</a></li>
 				<li class="current"><a href="courses.php">Cursos</a></li>
 				<li><a href="categories.php">Categorias</a></li>
+				<li><a href="sections.php">Secciones</a></li>
 				<li><a href="news.php">Noticias</a></li>
 				<li><a href="accounts.php">Cuentas</a></li>
-				<li><a href="orders.php">Ordenes</a></li>
-				<li><a href="logout.php">Log out</a></>
+        		<li><a href="orders.php">Ordenes</a></li>
+        		<li><a href="#">Mi Cuenta</a></li>
+				<li><a href="logout.php">Log out</a></li>
 			</ul>
 		</nav>
 	</aside>
@@ -65,115 +71,56 @@
 	<div id="main-wrapper">
 		<div class="main-content">
 			<section id="welcome">
-				<div class="content-header">
+				<div class="content-header" >
 					<h1>Cursos</h1>
 				</div>
-			
 
-      <div class="welcome">	
-  		
-   <!--================Table Area =================-->
-
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Codigo</th>
-                <th scope="col">Titulo</th>
-                <th scope="col">Descripcion</th>
-                <th scope="col">Imagen</th>
-                <th scope="col">Horas</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Categoria</th>
-                <th scope="col">Subcategoria</th>
-                <th scope="col">Seccion</th>
-                <th scope="col">Status</th>
-              </tr>
-            </thead>
-            <tbody>               
-              <tr>
-                <td>
-                  <div class="media">                      
-                    <div class="media-body">
-                    <h5>Frances Intermedio</h5>
-                    </div>
-                  </div>
-                  <td>
-                  <div class="media">                      
-                    <div class="media-body">
-                    <h5>Frances</h5>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="media">                      
-                    <div class="media-body">
-                        <h5>Frances</h5>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="media">   
-                    <div class="d-flex">
-                      <img src="../../commons/decep_images/cursos/frances1.jpg" alt="" height="50" width="50"/>
-                    </div>                   
-                  </div>
-                </td>
-                <td>
-                  <div class="media">                      
-                    <div class="media-body">
-                    <h5>Frances</h5>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="media">                      
-                    <div class="media-body">
-                    <h5>Frances</h5>
-                    </div>
-                  </div>
-                </td>
-                <!-- <td>
-                  <div class="media">                      
-                    <div class="media-body">
-                    <h5>Italiano</h5>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="media">                      
-                    <div class="media-body">
-                    <h5>Italiano</h5>
-                    </div>
-                  </div>
-                </td> -->
-                <td>
-                  <div class="media">                      
-                    <div class="media-body">
-                    <h5>Frances</h5>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="media">                      
-                    <div class="media-body">
-                    <h5>Frances</h5>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="media">                      
-                    <div class="media-body">
-                    <h5>Frances</h5>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          
-        </div>
-      </section>
-    </div>
+				<table class="table" >
+						<thead >
+						<tr >
+							<th scope="col" style="border-bottom: 0px;padding-top:2.5%">
+							<a href="add_course.php"><button class="btn_3" style="background-color:#ff2424">
+							Añadir Curso
+							</button></a>
+							<a href="report_course.php"><button class="btn_3" style="background-color:#ff2424">
+							Reporte de Cursos
+							</button></a>
+							<a href="statistics_course.php"><button class="btn_3" style="background-color:#ff2424">
+							Reporte Estadistica de Cursos
+							</button></a>
+							</th>
+						</tr>
+						</thead>
+				</table>
+				<!-- <div style="padding: 1%">
+					<button class="btn_3" href="add_course.php" style="background-color:#ff2424">
+					Añadir Curso
+					</button>
+				</div> -->
+				<div class="welcome" style="margin-top:0px;padding-top:0px">                   
+					<table class="table" >
+						<thead>
+						<tr >
+							<th scope="col">Id</th>
+							<th scope="col">Titulo</th>
+							<th scope="col">Imagen</th>
+							<th scope="col">Descripcion</th>
+							<th scope="col">Horas</th>
+							<th scope="col">Precio</th>
+							<th scope="col">Categoria</th>
+							<th scope="col">Subcategoria</th>
+							<th scope="col">Seccion</th>
+							<th scope="col">Status</th>
+							<th scope="col">Edit</th>
+						</tr>
+						</thead>
+						<tbody>
+							<?php getAdminCourse(); ?>
+						</tbody>
+					</table>
+				</div>
+			</section>
+  	</div>
   </div>
 
 

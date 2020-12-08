@@ -7,7 +7,7 @@
 <?php 
         
     include('../../commons/assets/includes/functions.php');
-        
+    session_start();
 ?>
 
 <head>
@@ -32,6 +32,18 @@
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<!-- Main CSS-->
 	<link rel="stylesheet" href="css/main.css">
+	<!-- Bootstrap CSS (Extra, Added)-->
+	<link rel="stylesheet" href="../../commons/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../commons/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../../commons/assets/css/flaticon.css">
+	<link rel="stylesheet" href="../../commons/assets/css/slicknav.css">
+	<link rel="stylesheet" href="../../commons/assets/css/animate.min.css">
+	<link rel="stylesheet" href="../../commons/assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="../../commons/assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="../../commons/assets/css/themify-icons.css">
+	<link rel="stylesheet" href="../../commons/assets/css/slick.css">
+	<link rel="stylesheet" href="../../commons/assets/css/nice-select.css">
+	<link rel="stylesheet" href="../../commons/assets/css/style.css">
 
 
 </head>
@@ -40,20 +52,19 @@
 
 	<div class="left-sidebar">
 		<div class="logo">
-		
-			<center><img src="img/uprainsignia.png" alt="" width="150" height="150"><br><br></center>
-        	<center><h1>Admin Menu</h1></center>
-		
-			
+			<center><a href="index.php"><img src="img/uprainsignia.png" alt="UPRA logo" width="150" height="150"></a></center>
+        	<center><h1>Menu</h1></center>
 		</div>
 		<nav class="left-nav">
 			<ul >
 				<li class="current"><a href="index.php">Inicio</a></li>
 				<li><a href="courses.php">Cursos</a></li>
 				<li><a href="categories.php">Categorias</a></li>
+				<li><a href="sections.php">Secciones</a></li>
 				<li><a href="news.php">Noticias</a></li>
 				<li><a href="accounts.php">Cuentas</a></li>
 				<li><a href="orders.php">Ordenes</a></li>
+				<li><a href="#">Mi Cuenta</a></li>
 				<li><a href="logout.php">Log out</a></li>
 			</ul>
 		</nav>
@@ -63,7 +74,7 @@
 		<div class="main-content">
 			<section id="welcome">
 				<div class="content-header">
-					<h1>Welcome, Admin Elver</h1>
+					<h1>Welcome, Admin <?php echo  $_SESSION['admin_name']."!" ?></h1>
 				</div>
 
 				<!-- <div class="welcome">
@@ -108,7 +119,7 @@
 					<!-- </div> -->
 
 					<!-- <div class="col-lg-5"> -->
-						<img src="../../commons/DECEP_IMG/lobo-grande2.png" alt="" >
+						<center><img src="../../commons/DECEP_IMG/lobo-grande2.png" alt="" ></center>
 					<!-- </div> -->
 					</div>
 
@@ -125,7 +136,7 @@
 
 			</section>
 			
-			<section id="installations">
+			<!-- <section id="installations">
 				<div class="content-header">
 					<h1>Cuenta de Profesores y sus cursos</h1>
 				</div>
@@ -136,17 +147,17 @@
 						<li>Prof. Juan Martin<br> -Grooming[13/20]</li>
 						<li>Prof. Elver Galarga<br> -Florister&iacute;a[9/20]</li>
 						<li>Prof. Jos&eacute; Rom&aacute;n <br> -Franc&eacute;s[5/20]</li>
-						<!--
+						
 						<li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a>) and upload the content of the Template on your server root.</li>
 						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
-						-->
+						
 					</ol>
 				</div>
 
-			</section>
+			</section> -->
 
 
-        	<section id="tmpl-structure">
+        	<!-- <section id="tmpl-structure">
 				<div class="content-header">
 					<h1>Todos los Cursos </h1>
 				</div>
@@ -157,18 +168,18 @@
 						<li>Grooming [12/20] </li>
 						<li>Fotograf&iacute;a digital B&aacute;sica[9/15]</li>
 						<li>Lenguaje de senas B&aacute;sico[13/20]</li>
-						<!--
+						
 						<li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a>) and upload the content of the Template on your server root.</li>
 						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
-						-->
+						
 					</ol>
 				</div>
 
-			</section>
+			</section> -->
 			
 			
 
-            <section id="css-structure">
+            <!-- <section id="css-structure">
 				<div class="content-header">
 					<h1>Lista de Estudiantes por Curso</h1>
 				</div>
@@ -179,22 +190,22 @@
 						<li>Grooming:<br>-<br>-<br>-...</li>
 						<li>Fotograf&iacute;a digital B&aacute;sica:<br>-<br>-<br>-...</li>
 						<li>Lenguaje de senas B&aacute;sico:<br>-<br>-<br>-...</li>
-						<!--
+						
 						<li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a>) and upload the content of the Template on your server root.</li>
 						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
-						-->
+						
 					</ol>
 				</div>
 
-			</section>
+			</section> -->
 			
-			 <section id="installationS">
+			 <!-- <section id="installationS">
 				<div class="content-header">
 					<h1>Informe de Ingresos</h1>
 				</div>
 				<h2 class="title"></h2>
 
-				<!--
+				
 				<div class="section-content">
 					<ol>
 						<li>Grooming:<br>-<br>-<br>-...</li>
@@ -204,16 +215,16 @@
 						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
 					</ol>
 				</div>
-				-->
+				
 
-			</section>
-			<section id="installationSs">
+			</section> -->
+			<!-- <section id="installationSs">
 				<div class="content-header">
 					<h1>Reporte de Ventas</h1>
 				</div>
 				<h2 class="title"></h2>
 
-				<!--
+				
 				<div class="section-content">
 					<ol>
 						<li>Grooming:<br>-<br>-<br>-...</li>
@@ -223,17 +234,17 @@
 						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
 					</ol>
 				</div>
-				-->
+				
 
-			</section>
+			</section> -->
 			
-			<section id="installationSS">
+			<!-- <section id="installationSS">
 				<div class="content-header">
 					<h1>Añadir/Editar Cursos</h1>
 				</div>
 				<h2 class="title"></h2>
 
-				<!--
+				
 				<div class="section-content">
 					<ol>
 						<li>Grooming:<br>-<br>-<br>-...</li>
@@ -243,17 +254,17 @@
 						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
 					</ol>
 				</div>
-				-->
+				
 
-			</section>
+			</section> -->
 			
-			<section id="installationSSs">
+			<!-- <section id="installationSSs">
 				<div class="content-header">
 					<h1>Informes de Inscripci&oacute;n de Estudiantes</h1>
 				</div>
 				<h2 class="title"></h2>
 
-				<!--
+				
 				<div class="section-content">
 					<ol>
 						<li>Grooming:<br>-<br>-<br>-...</li>
@@ -263,16 +274,16 @@
 						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
 					</ol>
 				</div>
-				-->
+				
 
-			</section>
-			<section id="installationSSS">
+			</section> -->
+			<!-- <section id="installationSSS">
 				<div class="content-header">
 					<h1>Editar estado del Curso</h1>
 				</div>
 				<h2 class="title"></h2>
 
-				<!--
+				
 				<div class="section-content">
 					<ol>
 						<li>Grooming:<br>-<br>-<br>-...</li>
@@ -282,9 +293,9 @@
 						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
 					</ol>
 				</div>
-				-->
+				
 
-			</section>
+			</section> -->
 			
 			<!-- <section id="installationSSSs">
 				<div class="content-header">

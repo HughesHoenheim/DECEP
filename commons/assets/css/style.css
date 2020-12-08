@@ -11499,7 +11499,8 @@ input:focus {
 
 /* line 38, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_mixins.scss */
 .billing_details .contact_form .form-group input::-webkit-input-placeholder {
-  color: #000;
+  /* color: #000; */
+  color: #777;
 }
 
 /* line 1616, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_product.scss */

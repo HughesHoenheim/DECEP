@@ -18,8 +18,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                 $email = $_POST['email'];
                 $password = $_POST['password'];
 
-               echo "<br><h3>Email: $email</h3>";
-               echo "<h3>Password: $password</h3><br>";
+            //    echo "<br><h3>Email: $email</h3>";
+            //    echo "<h3>Password: $password</h3><br>";
                 $query = "SELECT * FROM user WHERE email = '$email'  AND pass = '$password'";
                 $r = mysqli_query($dbc, $query);
                 
@@ -59,18 +59,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                         $_SESSION['admin_name'] = $row2['firstname'];
                         $_SESSION['admin_id'] = $row2['admin_id'];
                         //header('Location: admin/index.php');
-                         echo "<meta http-equiv=\"refresh\" content=\"0;url=../backend/admin/index.html\">";
+                         echo "<meta http-equiv=\"refresh\" content=\"0;url=../backend/admin/index.php\">";
                         exit();
                     }
                 }
                     else if($row3 = mysqli_fetch_array($r3))
                 {
                     if ( (strtolower($_POST['email']) == $row3['email']) && ($_POST['password'] ==$row3['pass']) && ($row3['inst_status'] == 'active') )
-                    {//El usuario es admin.
+                    {//El usuario es instructor.
                         
                         $_SESSION['instructor_name'] = $row3['firstname'];
                         $_SESSION['instructor_id'] = $row3['inst_id'];
-                        //header('Location: admin/index.php');
+                        //header('Location: instructor/index.php');
                          echo "<meta http-equiv=\"refresh\" content=\"0;url=instructor/index.php\">";
                         exit();
                     }
@@ -78,7 +78,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                 else 
                 { // Usuario no existe en la tabla
 
-                    print '<h3>El email y/o password entrados no concuerdan con nuestros archivos!<br><br>Vuelva a intentarlo.<a href="login.php"> Login </a></h3>';
+                    print '<h3>El email y/o password entrados no concuerdan con nuestros archivos!<br><br>
+                    Vuelva a intentarlo.<a style=color:blue; href="login.php"> Login </a></h3>';
 
                 }
 			}

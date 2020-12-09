@@ -57,8 +57,8 @@
 			<ul>
 				<li ><a href="index.php">Inicio</a></li>
 				<li><a href="courses.php">Cursos</a></li>
-				<li class="current"><a href="categories.php">Categorias</a></li>
-				<li><a href="sections.php">Secciones</a></li>
+				<li><a href="categories.php">Categorias</a></li>
+				<li class="current"><a href="sections.php">Secciones</a></li>
 				<li><a href="news.php">Noticias</a></li>
 				<li><a href="accounts.php">Cuentas</a></li>
         		<li><a href="orders.php">Ordenes</a></li>
@@ -72,75 +72,52 @@
 		<div class="main-content">
 			<section id="welcome">
 				<div class="content-header" >
-					<h1>Categorias y Subcategorias</h1>
+					<h1>Secciones y Horarios</h1>
 				</div>
 
 				<table class="table" >
 						<thead >
 						<tr >
 							<th scope="col" style="border-bottom: 0px;padding-top:2.5%">
-							<a href="add_category.php"><button class="btn_3" style="background-color:#ff2424">
-							Añadir Categoria
+							<a href="add_section.php"><button class="btn_3" style="background-color:#ff2424">
+							Añadir Seccion
+                            </button></a>
+                            <a href="add_timeslot.php"><button class="btn_3" style="background-color:#ff2424">
+							Añadir Horario
 							</button></a>
-							<a href="add_subcategory.php"><button class="btn_3" style="background-color:#ff2424">
-							Añadir Subcategoria
+							<a href="report_sections.php"><button class="btn_3" style="background-color:#ff2424">
+							Reporte de Secciones
 							</button></a>
-							<a href="report_categories.php"><button class="btn_3" style="background-color:#ff2424">
-							Reporte de Categorias y Subcategorias
+							<a href="statistics_section.php"><button class="btn_3" style="background-color:#ff2424">
+							Reporte Estadistica de Secciones
 							</button></a>
-							<!-- <a href="statistics_course.php"><button class="btn_3" style="background-color:#ff2424">
-							Reporte Estadistica de Categorias y Subcategorias
-							</button></a> -->
 							</th>
 						</tr>
 						</thead>
 				</table>
-			
+				<!-- <div style="padding: 1%">
+					<button class="btn_3" href="add_course.php" style="background-color:#ff2424">
+					Añadir Curso
+					</button>
+				</div> -->
 				<div class="welcome" style="margin-top:0px;padding-top:0px">                   
 					<table class="table" >
 						<thead>
-						<h2>Categorias</h2>
 						<tr >
 							<th scope="col">Id</th>
 							<th scope="col">Nombre</th>
-							<th scope="col">Imagen</th>
+							<th scope="col">Id Curso</th>
+							<th scope="col">Semestre</th>
+							<th scope="col">Año</th>
+							<th scope="col">Capacidad</th>
+							<th scope="col">Salon</th>
+							<th scope="col">Id Horario</th>
 							<th scope="col">Status</th>
 							<th scope="col">Edit</th>
 						</tr>
 						</thead>
 						<tbody>
-							<?php getAdminCategory(); ?>
-						</tbody>
-					</table>
-				</div>
-
-				<!-- Division entre Categorias y Subcategorias -->
-				<div class="welcome" style="margin-top:0px;padding-top:0px">                   
-					<table class="table" >
-						<thead>
-							<tr>
-								<td></td>
-							</tr>
-						</thead>
-						<tbody>
-						</tbody>
-					</table>
-				</div>
-			
-				<div class="welcome" style="margin-top:0px;padding-top:0px">                   
-					<table class="table" >
-						<thead>
-						<h2>Subategorias</h2>
-						<tr >
-							<th scope="col">Id</th>
-							<th scope="col">Nombre</th>
-							<th scope="col">Imagen</th>
-							<th scope="col">Status</th>
-							<th scope="col">Edit</th>
-						</tr>
-						</thead>
-						<tbody>
-							<?php getAdminSubcategory(); ?>
+							<?php getAdminSection(); ?>
 						</tbody>
 					</table>
 				</div>

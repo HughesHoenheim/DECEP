@@ -141,19 +141,24 @@ else // No llegó por un submit, por lo tanto hay que presentar el formulario
     }
     
 ?>
-
-
-            <center><div class="col-lg-8">
-                <br><br>
+        <!-- <section class="login_part section_padding "> -->
+        <div class="container">
+        <div class="row align-items-center">
+        <div class="col-lg-12 col-md-12">
+            <div class="login_part_form" style="padding-top:5%">
+                <div class="login_part_form_iner">
+                <!-- <h3>Registrarse</h3> -->
+            <!-- <center><div class="col-lg-8"> -->
+                <!-- <br><br> -->
 <!--            <center><h2>Registrarse</h2></center>-->
-            <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+            <form class="row contact_form" action="register.php" method="post" novalidate="novalidate">
               <div class="col-md-6 form-group p_star">
                 <label for="name" style="color: black">First Name *</label>
-                <input type="text" id="name" name="firstname" value="<?php echo $_SESSION['firstname']; ?>" required>
+                <input type="text" class="form-control" id="name" name="firstname" value="<?php echo $_SESSION['firstname']; ?>" required>
               </div>
               <div class="col-md-6 form-group p_star">
                 <label for="name" style="color: black">Last Name </label>
-                <input type="text" id="name" name="lastname" value="<?php echo $_SESSION['lastname']; ?>">
+                <input type="text" class="form-control" id="name" name="lastname" value="<?php echo $_SESSION['lastname']; ?>">
               </div>
 <!--
               <div class="col-md-12 form-group">
@@ -162,24 +167,22 @@ else // No llegó por un submit, por lo tanto hay que presentar el formulario
 -->
              <div class="col-md-6 form-group p_star">
                 <label for="username" style="color: black">Email Address *</label>
-                <input type="email" id="email" name="email" value="<?php echo $_SESSION['email']; ?>" required>
+                <input type="email" class="form-control" id="email" name="email" value="<?php echo $_SESSION['email']; ?>" required>
               </div>
               
               <div class="col-md-6 form-group p_star">
                 <label for="pass" style="color: black">Password *</label>
-                <input type="password" id="pass" name="password" required>
+                <input type="password" class="form-control" id="pass" name="password" required>
               </div>
-              
-              <div class="col-md-6 form-group p_star">
-                <label for="con-pass" style="color: black">Confirm Password * 
-<!--                <span style="color: red; text-shadow: 1px 1px 1px red;"><?php echo $_SESSION['err_mess']; ?></span></label>-->
-                <input type="password" id="con-pass" name="con_pass" required>
-              </div>
-              
-              
+
               <div class="col-md-6 form-group p_star">
                 <label for="phone" style="color: black">Phone *   </label>
-                <input type="phone" id="phone" name="phone">
+                <input type="text" class="form-control" id="phone" name="phone">
+              </div>
+              
+              <div class="col-md-6 form-group p_star">
+                <label for="pass" style="color: black">Confirm Password * </label>
+                <input type="password" class="form-control" id="pass" name="con_pass" required>
               </div>
               
               
@@ -232,10 +235,15 @@ else // No llegó por un submit, por lo tanto hay que presentar el formulario
               <button class="btn header-btn" type="submit" name="submit" style="align: center">CREATE ACCOUNT</button>
             </form>
           </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- </section> -->
 <!--            <a class="btn_3" href="#">Crear Cuenta</a>-->
 
 
-</center>
+<!-- </center> -->
 
     <!--================login_part Area =================-->
 <!--

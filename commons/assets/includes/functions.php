@@ -362,12 +362,6 @@ function getAdminCourse(){
             
         case 'z': $order_by = 'course_name DESC';
             break;
-        
-        case 'm': $order_by = 'stock DESC';
-            break;
-        
-        case 'p': $order_by = 'stock ASC';
-            break;
             
         case 'h': $order_by = 'price DESC';
             break;
@@ -429,7 +423,195 @@ function getAdminCourse(){
                 </tr>";
     }
 }
+
+function getAdminCategory(){
+             
+    global $dbc;
+
+    //Determinar columna para ordenar.
+    if(isset($_GET['order']))
+    $orden=$_GET['order'];
+    else
+    $orden = 'r';
+
+    switch($orden)
+    {
+        case 'a': $order_by = 'cat_name ASC';
+            break;
+            
+        case 'z': $order_by = 'cat_name DESC';
+            break;
+
+        case 'r': $order_by = 'cat_name ASC';
+            break;
+            
+        default: $order_by = 'cat_name ASC';
+    }
     
- 
+
+    $get_cat = "SELECT * FROM category ORDER BY $order_by";
+
+    $run_cat = mysqli_query($dbc, $get_cat);
+
+    while($row_cat=mysqli_fetch_array($run_cat))
+    {
+        $cat_id       =  $row_cat['cat_id'];
+        $cat_name     =  $row_cat['cat_name'];
+        $cat_image    =  $row_cat['image'];
+        $cat_status   =  $row_cat['cat_status'];
+                    
+        echo    "<tr>
+                    <td><h5>$cat_id</h5></td>
+                    <td><h5>$cat_name</h5></td>
+                    <td>
+                        <div class='media'>
+                        <div class='d-flex'>
+                            <img src='../../commons/decep_images/cursos/$cat_image' width='100' height='90' alt='' />
+                        </div>
+                        </div>
+                    </td>
+                    <td><h5>$cat_status</h5></td>
+                    <td>
+                        <div class='media'>
+                        <div class='d-flex'>
+                        <a href='edit_category.php?cat_id=$cat_id'>
+                            <img src='../../commons/decep_images/edit_icon.png' width='30' height='30' alt='Edit' />
+                        </a>
+                        </div>
+                        </div>
+                    </td>
+                </tr>";
+    }
+}
+    
+function getAdminSubcategory(){
+             
+    global $dbc;
+
+    //Determinar columna para ordenar.
+    if(isset($_GET['order']))
+    $orden=$_GET['order'];
+    else
+    $orden = 'r';
+
+    switch($orden)
+    {
+        case 'a': $order_by = 'subcat_name ASC';
+            break;
+            
+        case 'z': $order_by = 'subcat_name DESC';
+            break;
+
+        case 'r': $order_by = 'subcat_name ASC';
+            break;
+            
+        default: $order_by = 'subcat_name ASC';
+    }
+    
+
+    $get_subcat = "SELECT * FROM subcategory ORDER BY $order_by";
+
+    $run_subcat = mysqli_query($dbc, $get_subcat);
+
+    while($row_subcat=mysqli_fetch_array($run_subcat))
+    {
+        $subcat_id       =  $row_subcat['subcat_id'];
+        $subcat_name     =  $row_subcat['subcat_name'];
+        $subcat_image    =  $row_subcat['image'];
+        $subcat_status   =  $row_subcat['subcat_status'];
+                    
+        echo    "<tr>
+                    <td><h5>$subcat_id</h5></td>
+                    <td><h5>$subcat_name</h5></td>
+                    <td>
+                        <div class='media'>
+                        <div class='d-flex'>
+                            <img src='../../commons/decep_images/cursos/$subcat_image' width='100' height='90' alt='' />
+                        </div>
+                        </div>
+                    </td>
+                    <td><h5>$subcat_status</h5></td>
+                    <td>
+                        <div class='media'>
+                        <div class='d-flex'>
+                        <a href='edit_subcategory.php?subcat_id=$subcat_id'>
+                            <img src='../../commons/decep_images/edit_icon.png' width='30' height='30' alt='Edit' />
+                        </a>
+                        </div>
+                        </div>
+                    </td>
+                </tr>";
+    }
+}
+
+function getAdminSection(){
+             
+    global $dbc;
+
+    //Determinar columna para ordenar.
+    if(isset($_GET['order']))
+    $orden=$_GET['order'];
+    else
+    $orden = 'r';
+
+    switch($orden)
+    {
+        case 'a': $order_by = 'section_name ASC';
+            break;
+            
+        case 'z': $order_by = 'section_name DESC';
+            break;
+            
+        case 'h': $order_by = 'price DESC';
+            break;
+            
+        case 'l': $order_by = 'price ASC';
+            break;
+
+        case 'r': $order_by = 'section_name ASC';
+            break;
+            
+        default: $order_by = 'section_name ASC';
+    }
+    
+
+    $get_section = "SELECT * FROM section ORDER BY $order_by";
+
+    $run_section = mysqli_query($dbc, $get_section);
+
+    while($row_section=mysqli_fetch_array($run_section))
+    {
+        $section_id       =  $row_section['section_id'];
+        $section_name     =  $row_section['section_name'];
+        $course_id        =  $row_section['course_id'];
+        $section_semester =  $row_section['semester'];
+        $section_year     =  $row_section['year'];
+        $section_capacity =  $row_section['capacity'];
+        $section_room     =  $row_section['room'];
+        $section_timeslot =  $row_section['time_slot_id'];
+        $section_status   =  $row_section['status'];
+                    
+        echo    "<tr>
+                    <td><h5>$section_id</h5></td>
+                    <td><h5>$section_name</h5></td>
+                    <td><h5>$course_id</h5></td>
+                    <td><h5>$section_semester</h5></td>
+                    <td><h5>$section_year</h5></td>
+                    <td><h5>$section_capacity</h5></td>
+                    <td><h5>$section_room</h5></td>
+                    <td><h5>$section_timeslot</h5></td>
+                    <td><h5>$section_status</h5></td>
+                    <td>
+                        <div class='media'>
+                        <div class='d-flex'>
+                        <a href='edit_section.php?section_id=$section_id'>
+                            <img src='../../commons/decep_images/edit_icon.png' width='30' height='30' alt='Edit' />
+                        </a>
+                        </div>
+                        </div>
+                    </td>
+                </tr>";
+    }
+}
 
 ?>

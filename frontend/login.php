@@ -137,7 +137,7 @@ else // No llegó por un submit, por lo tanto hay que presentar el formulario
                         <div class="login_part_form_iner">
                             <h3>Bienvenidos! <br><br>
                                 Iniciar Sesi&oacute;n</h3>
-                            <form class="row contact_form" acction= "login.php" method="post" >
+                            <form class="row contact_form" action= "login.php" method="post" >
                                 <div class="col-md-12 form-group p_star">
                                     <input type="email" class="form-control" id="email" name="email" 
                                         placeholder="Email">

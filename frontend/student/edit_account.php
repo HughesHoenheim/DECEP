@@ -49,36 +49,26 @@ if(isset($_GET['user_id']))
                 <div class="row">
                     <div class="col-lg-6">
                             <div class="row">
-                            <div class="col-lg-6">
-                                <label for="fir">First Name<span>*</span></label>
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <label for="fir"><b>First Name</b><span>*</span></label>
                                 <input type="text" name ="firstname" value="<?php echo $row['firstname'];?>" id="fir" required>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="last">Last Name<span>*</span></label>
+                            </div>&nbsp;
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <label for="last"><b>Last Name</b><span>*</span></label>
                                 <input type="text" name ="lastname" value="<?php echo $row['lastname'];?>" id="last" required>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="phone">Phone<span>*</span></label>
+                            </div>&nbsp;
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <label for="phone"><b>Phone</b><span>*</span></label>
                                 <input type="text" name ="phone" value="<?php echo $row['phone'];?>" id="phone" required>
-                            </div>
-                            <div class="col-lg-6">
-                            <label for="myFile"><br>&nbsp;&nbsp;&nbsp;&nbsp;Profile Picture<span>*</span></label>
-                                <?php echo "<img width=\"300\" height=\"170\" style=\"border-radius: 50%\"
+                            </div>&nbsp;
+                            <div class="main-menu f-right d-none d-lg-block">
+                            <label for="myFile"><b>Profile Picture</b><span>*</span></label>
+                                <?php echo "<img width=\"250\" height=\"250\" style=\"border-radius: 50%\"
                                             src=\"../../commons/user_images/$user_img\">"; ?>
                                 <input type="file" name="profileimg" id="myFile">
-<!--                            <input type="file" name ="profileimg" value="<-?php echo $row['cust_img'];?>" id="myFile" required>-->
                             </div> 
 
                             <div class="col-lg-12">
-<!--
-                                <div class="create-item">
-                                    <label for="acc-create">
-                                        Create an account?
-                                        <input type="checkbox" id="acc-create">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
--->
                                 <div class="order-btn">
                                     <br>
                                     <button  type="submit" name="save_changes" class="btn header-btn" >Save Changes</button>
@@ -107,7 +97,7 @@ else if(isset($_POST['user_id']))
     //Getting the image from the fields.
         if(empty($_FILES['profileimg']['name'])){
             //echo "<script>alert('Guachet! Adentro IF!')</script>";
-            $customer_image = $_SESSION['user_image'];
+            $customer_image = $_SESSION['user_img'];
         }
         else{
             //echo "<script>alert('Guachet! Adentro ELSE!')</script>";
@@ -119,7 +109,7 @@ else if(isset($_POST['user_id']))
         //Query variable for inserting data to database.
         //To test if it works, use an echo command before 
         //query variable and try page with dummy data.
-        $update_info = "UPDATE customer 
+        $update_info = "UPDATE user 
         SET firstname=\"$firstname\", lastname=\"$lastname\", phone=\"$phone\", user_img=\"$customer_image\"
         WHERE user_id={$_POST['user_id']}";
 

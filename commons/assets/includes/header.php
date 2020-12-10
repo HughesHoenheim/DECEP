@@ -12,7 +12,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="../../DECEP/commons/DECEP_IMG/DECEPlogo2.png">
+		<link rel="shortcut icon" type="image/x-icon" href="../commons/DECEP_IMG/DECEPlogo2.png">
 
 		<!-- CSS here -->
             <link rel="stylesheet" href="../commons/assets/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="../../DECEP/commons/DECEP_IMG/DECEPlogo.png" alt="">
+                    <img src="../commons/DECEP_IMG/DECEPlogo.png" alt="">
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
                                         <img src="assets/img/icon/header_icon.png" alt="">
                                     </div>
 -->                                    <div class="select-this">
-                                        <img src="../../DECEP/commons/DECEP_IMG/arecibo.png" alt="" width="150" height="70">
+                                        <img src="../commons/DECEP_IMG/arecibo.png" alt="" width="150" height="70">
 
 <!--
                                         <form action="#">
@@ -77,7 +77,7 @@
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
-                                <img src="../../DECEP/commons/DECEP_IMG/imagenes%20UPR%20DECEP%20EN%20LINEA2.png" alt="">
+                                <img src="../commons/DECEP_IMG/imagenes%20UPR%20DECEP%20EN%20LINEA2.png" alt="">
 
 <!--
                                    <ul>                                          
@@ -99,45 +99,18 @@
                             <!-- Logo -->
                             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                                 <div class="logo">
-                                    <a href="index.php"><img src="../../DECEP/commons/DECEP_IMG/DECEPlogo2.png" alt="" width="130" height="130"></a>
+                                    <a href="index.php"><img src="../commons/DECEP_IMG/DECEPlogo2.png" alt="" width="130" height="130"></a>
 <!--                                  <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>-->
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
                                 <!-- Main-menu -->
-                                <div class="main-menu f-right d-none d-lg-block">
+                                <div class="main-menu  d-none d-lg-block">
                                     <nav>                                                
                                         <ul id="navigation">
                                             <li><a href="index.php">Inicio</a></li>
-                                            <li><a href="course.php">Cursos</a>
-<!--
-                                                <ul class="submenu">
-                                                    <li><a href="product_list.php"> Lista de Cursos</a></li>
-                                                   
-                                                </ul>
--->
-                                            </li>
-                                            <li><a href="">Matr&iacute;cula</a></li>
-                                            <li><a href="checkout.php">Checkout</a></li>
-<!--
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="login.html">Login</a></li>
-                                                    <li><a href="cart.html">Card</a></li>
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="confirmation.html">Confirmation</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Product Checkout</a></li>
-                                                </ul>
-                                            </li>
--->
+                                            <li><a href="course.php">Cursos</a></li>
+                                            <li><a href="#">Matr&iacute;cula</a></li>
                                             <li><a href="contact.php">Contact</a></li>
                                         </ul>
                                     </nav>

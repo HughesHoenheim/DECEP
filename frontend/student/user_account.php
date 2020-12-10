@@ -48,9 +48,12 @@
                     Edit Account Info</a> <a href=\"./edit_account.php?user_id=$customer_id\" class=\"btn header-btn\" style=\"background-color: #FBC20E\">View My Orders</a>"
                     ?>
                         <div id="user_info">
-                        <img align="right" src="../../commons/user_images/<?php echo $image; ?>">
-                            <?php 
-                            echo "Name: $firstname  $lastname<br>";
+                            <div class="col-md-6 form-group p_star">
+                            <br>
+                            <img  width="250" height="250" style="border-radius: 50%" align="right" src="../../commons/user_images/<?php echo $image; ?>">
+                            </div><br>
+                            <?php
+                            echo "Name: $firstname $lastname<br>";
                             echo "Email: $email<br>";
                             echo "Phone: $phone";
                             ?>

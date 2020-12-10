@@ -113,7 +113,7 @@
                                 <img src="../../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/empresarismo1.jpg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Todas</h2>-->
-                                    <span class="best"><a href="course.php">Todas las Categor&iacute;as</a></span>
+                                    <span class="btn header-btn"><a href="course.php">Todas las Categor&iacute;as</a></span>
 <!--                                    <span class="collection">New Collection</span>-->
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                             <div class="category-img text-center">
                                 <img src="../../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/facturacionMED1.jpg" alt="" width="370" height="320">
                                 <div class="category-caption">
-                                <span class="best"><a href="course.php">Cursos Cortos</a></span>
+                                <span class="btn header-btn"><a href="course.php">Cursos Cortos</a></span>
 
 <!--                                    <span class="collection">Discount!</span>-->
 <!--
@@ -141,7 +141,7 @@
                                 <img src="../../commons/DECEP_IMG/Cursos_IMG/certificacionesprof/gerenciasuper1.jpeg" alt="" width="370" height="320">
                                 <div class="category-caption">
 <!--                                    <h2>Man`s Cloth</h2>-->
-                                    <span class="best"><a href="course.php">Certificaciones Profecionales</a></span>
+                                    <span class="btn header-btn"><a href="course.php">Certificaciones Profecionales</a></span>
 <!--                                    <span class="collection">New Collection</span>-->
                                 </div>
                             </div>
@@ -846,7 +846,7 @@
                             <div class="best-product-caption">
                                 <h2>Encuentra el curso que deseas<br></h2>
                                 <p>Convi&eacute;rtete en un profecional.</p>
-                                <a href="product_list.php" class="black-btn">Matricúlate!</a>
+                                <a href="product_list.php" class="btn header-btn">Matricúlate!</a>
                             </div>
                         </div>
                     </div>

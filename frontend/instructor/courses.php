@@ -1,4 +1,5 @@
-<?php include("../../commons/assets/includes/functions.php"); ?>
+<?php include("../../commons/assets/includes/functions.php"); 
+ session_start();?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -57,13 +58,13 @@
 			-->
 		</div>
 		<nav class="left-nav">
-			<ul>
-				<li ><a href="index.php">Inicio</a></li>
-				<li class="current"><a href="courses.php">Cursos</a></li>
+			<ul >
+				<li class="current"><a href="index.php">Inicio</a></li>
+				<li><a href="courses.php">Cursos</a></li>
 				<li><a href="categories.php">Categorias</a></li>
+                <li><a href="students.php">Matricula en Cursos</a></li>
 				<li><a href="news.php">Noticias</a></li>
-				<li><a href="accounts.php">Cuentas</a></li>
-				<li><a href="orders.php">Ordenes</a></li>
+				
 				<li><a href="logout.php">Log out</a></li>
 			</ul>
 		</nav>

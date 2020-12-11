@@ -344,6 +344,144 @@ FROM section where section_id = $section_id";
 
 //    }
 }
+function getStudentsinCourse(){
+    {
+    
+//    if(!isset($_GET['search'])){
+    if(!isset($_GET['cat_id'])){
+//        if(!isset($_GET['type_id'])){
+            
+            global $dbc;
+    
+            //Determinar columna para ordenar.
+            if(isset($_GET['order']))
+            $orden=$_GET['order'];
+            else
+            $orden = 'r';
+        
+            switch($orden)
+            {
+            case 'a': $order_by = 'prod_name ASC LIMIT 0,9';
+                break;
+                
+            case 'z': $order_by = 'prod_name DESC LIMIT 0,9';
+                break;
+                
+            case 'h': $order_by = 'price DESC LIMIT 0,9';
+                break;
+                
+            case 'l': $order_by = 'price ASC LIMIT 0,9';
+                break;
+
+            case 'r': $order_by = 'RAND() LIMIT 0,9';
+                break;
+                
+            default: $order_by = 'RAND() LIMIT 0,9';
+            }
+            
+
+            $get_course = "SELECT * 
+FROM (instructor NATURAL JOIN teaches) LEFT OUTER JOIN course USING (course_id)";
+        
+            $run_course = mysqli_query($dbc, $get_course);
+        
+            while ($row_cat_course=mysqli_fetch_array($run_course)){
+        
+            $cour_id       =  $row_cat_course['course_id'];
+            $cour_name     =  $row_cat_course['course_name'];
+            $cour_cat      =  $row_cat_course['category_id'];
+            $cour_subcat   =  $row_cat_course['subcategory_id'];
+            $cour_image    =  $row_cat_course['image'];
+           
+            $cour_keys     =  $row_cat_course['keywords'];
+            
+            $cour_status   =  $row_cat_course['status'];
+            $section_id    =  $row_cat_course['section_id'];
+            $semester      =  $row_cat_course['semester'];
+            
+            
+                    if($cour_status == 'active')
+                {
+                         $get_section = "SELECT * 
+            FROM section where section_id = $section_id";
+            $run_section = mysqli_query($dbc, $get_section);
+            while ($row_cat_course=mysqli_fetch_array($run_section)){
+        
+            $capacity      =  $row_cat_course['capacity'];
+            $room     =  $row_cat_course['room'];
+            
+            $get_student = "SELECT * FROM (USER NATURAL JOIN cart) LEFT OUTER JOIN course USING (course_id) WHERE course_id= $cour_id ";
+            $run_student = mysqli_query($dbc, $get_student);
+            while ($row_cat_course2=mysqli_fetch_array($run_student)){
+        
+            $name      =  $row_cat_course2['firstname'];
+            $lastname     =  $row_cat_course2['lastname'];
+            $user_img     =  $row_cat_course2['user_img'];
+            $email     =  $row_cat_course2['email'];
+                
+             
+        
+           
+                        
+    echo "
+            <h2 class='twenty'>$cour_name <img src='../../commons/decep_images/cursos/$cour_image' width='90' height='55' alt='' /></h2>
+            <table class='table'>
+            <thead>
+              <tr>
+                <th scope='col'>Name</th>
+                <th scope='col'>Email</th>
+                <th scope='col'>Seccion ID</th>
+                <th scope='col'>Semestre</th>
+                
+               
+                <th scope='col'>Sal&oacute;n</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                  <div class='media'>
+                    <div class='d-flex'>
+                      <img src='../../commons/user_images/$user_img' width='100' height='80' alt='' />
+                        &nbsp;$name&nbsp;$lastname
+                    </div>
+                      
+                  </div>
+                </td>
+                <td>
+                  <h5>$email</h5>
+                </td>
+               
+                <td>
+                  <h5>$section_id</h5>
+                </td>
+                <td>
+                  <h5>$semester</h5>
+                </td>
+               
+                
+                <td>
+                 <h5>$room</h5>
+                </td>
+               
+                     
+              </tr>
+            </tbody>
+          </table>"
+                          ;
+            }
+            
+                    }
+                }
+                }
+//            }
+    
+        }
+
+//    }
+}
+
+}
 
 function getAdminCourse(){
              
